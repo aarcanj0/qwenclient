@@ -28,7 +28,7 @@ Após pressionar as teclas `Alt + C` seu assistente de IA irá abrir pronto para
 
 ## Mudando as teclas de atalho para chamar o QwenClient
 
-Infelizmente ainda não implementei isso como recurso no QwenClient ainda, então você vai ter que recompilar o QwenClient com as mudanças que quiser.
+Infelizmente ainda não implementei isso como recurso no QwenAgent ainda, então você vai ter que recompilar o QwenClient com as mudanças que quiser.
 
 Pra fazer isso simplesmente mude os valores dessas duas variáveis:
 
