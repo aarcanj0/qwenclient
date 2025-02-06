@@ -1,0 +1,2940 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "CefSharp.Common/132.3.11": {
+        "type": "package",
+        "dependencies": {
+          "chromiumembeddedframework.runtime.win-x64": "[132.3.1]",
+          "chromiumembeddedframework.runtime.win-x86": "[132.3.1]"
+        },
+        "compile": {
+          "lib/net462/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net462/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net462/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net462/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "build": {
+          "buildTransitive/CefSharp.Common.props": {},
+          "buildTransitive/CefSharp.Common.targets": {}
+        }
+      },
+      "CefSharp.WinForms/132.3.11": {
+        "type": "package",
+        "dependencies": {
+          "CefSharp.Common": "[132.3.11]"
+        },
+        "compile": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "chromiumembeddedframework.runtime.win-x64/132.3.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/chromiumembeddedframework.runtime.win-x64.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/chrome_100_percent.pak": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/chrome_200_percent.pak": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/chrome_elf.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/d3dcompiler_47.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/dxcompiler.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/dxil.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/icudtl.dat": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/libEGL.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/libGLESv2.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/libcef.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/resources.pak": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/snapshot_blob.bin": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/v8_context_snapshot.bin": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/vk_swiftshader.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/vk_swiftshader_icd.json": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/vulkan-1.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "chromiumembeddedframework.runtime.win-x86/132.3.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/chromiumembeddedframework.runtime.win-x86.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x86/native/chrome_100_percent.pak": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/chrome_200_percent.pak": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/chrome_elf.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/d3dcompiler_47.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/icudtl.dat": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/libEGL.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/libGLESv2.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/libcef.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/resources.pak": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/snapshot_blob.bin": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/v8_context_snapshot.bin": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/vk_swiftshader.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/vk_swiftshader_icd.json": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/vulkan-1.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net472": "1.0.0"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net472/1.0.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.Notifications/7.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies": "1.0.0",
+          "Microsoft.Windows.SDK.Contracts": "10.0.19041.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Toolkit.Uwp.Notifications.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Toolkit.Uwp.Notifications.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Windows.SDK.Contracts/10.0.19041.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.6.0",
+          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/Windows.AI.MachineLearning.MachineLearningContract.winmd": {},
+          "ref/netstandard2.0/Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivationCameraSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ContactActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.Background.CallsBackgroundContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsPhoneContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsVoipContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.LockScreenCallContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.FullTrustAppContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Preview.InkWorkspace.PreviewInkWorkspaceContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Preview.Notes.PreviewNotesContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Resources.Management.ResourceIndexerContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Search.Core.SearchCoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Search.SearchContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.SocialInfo.SocialInfoContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.StartupTaskContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Wallet.WalletContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Custom.CustomDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.DevicesLowLevelContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Portable.PortableDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Printers.Extensions.ExtensionsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Printers.PrintersContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Scanners.ScannerDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardBackgroundTriggerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardEmulatorContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Sms.LegacySmsApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Embedded.DeviceLockdown.DeviceLockdownContract.winmd": {},
+          "ref/netstandard2.0/Windows.Foundation.FoundationContract.winmd": {},
+          "ref/netstandard2.0/Windows.Foundation.UniversalApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.Input.GamingInputPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.Preview.GamesEnumerationContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.UI.GameChatOverlayContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.UI.GamingUIProviderContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.XboxLive.StorageApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Graphics.Printing3D.Printing3DContract.winmd": {},
+          "ref/netstandard2.0/Windows.Management.Deployment.Preview.DeploymentPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.Management.Workplace.WorkplaceSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.AppBroadcasting.AppBroadcastingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.AppRecording.AppRecordingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppBroadcastContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppCaptureContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppCaptureMetadataContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.CameraCaptureUIContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.GameBarContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Devices.CallControlContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.MediaControlContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Playlists.PlaylistsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Protection.ProtectionRenewalContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.Connectivity.WwanContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.NetworkOperators.LegacyNetworkOperatorsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.NetworkOperators.NetworkOperatorsFdnContract.WinMD": {},
+          "ref/netstandard2.0/Windows.Networking.Sockets.ControlChannelTriggerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.XboxLive.XboxLiveSecureSocketsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Perception.Automation.Core.PerceptionAutomationCoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.Phone.PhoneContract.winmd": {},
+          "ref/netstandard2.0/Windows.Phone.StartScreen.DualSimTileContract.WinMD": {},
+          "ref/netstandard2.0/Windows.Security.EnterpriseData.EnterpriseDataContract.winmd": {},
+          "ref/netstandard2.0/Windows.Security.ExchangeActiveSyncProvisioning.EasContract.winmd": {},
+          "ref/netstandard2.0/Windows.Security.Isolation.Isolatedwindowsenvironmentcontract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Maps.GuidanceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Maps.LocalSearchContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Store.StoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.TargetedContent.TargetedContentContract.winmd": {},
+          "ref/netstandard2.0/Windows.Storage.Provider.CloudFilesContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileHardwareTokenContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileRetailInfoContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileSharedModeContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.SystemManufacturers.SystemManufacturersContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.SystemManagementContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.UserProfile.UserProfileContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.UserProfile.UserProfileLockScreenContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.ApplicationSettings.ApplicationsSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Core.AnimationMetrics.AnimationMetricsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Core.CoreWindowDialogsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Shell.SecurityAppManagerContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.ViewManagement.ViewManagementViewScalingContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.WebUI.Core.WebUICommandBarContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Xaml.Core.Direct.XamlDirectContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Xaml.Hosting.HostingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Web.Http.Diagnostics.HttpDiagnosticsContract.winmd": {},
+          "ref/netstandard2.0/Windows.WinMD": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "buildTransitive/net461/System.Runtime.WindowsRuntime.targets": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime.UI.Xaml/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.6.0"
+        },
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "build/net461/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "CefSharp.Common/132.3.11": {
+        "type": "package",
+        "dependencies": {
+          "chromiumembeddedframework.runtime.win-x64": "[132.3.1]",
+          "chromiumembeddedframework.runtime.win-x86": "[132.3.1]"
+        },
+        "compile": {
+          "lib/net462/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net462/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net462/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net462/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "build": {
+          "buildTransitive/CefSharp.Common.props": {},
+          "buildTransitive/CefSharp.Common.targets": {}
+        }
+      },
+      "CefSharp.WinForms/132.3.11": {
+        "type": "package",
+        "dependencies": {
+          "CefSharp.Common": "[132.3.11]"
+        },
+        "compile": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "chromiumembeddedframework.runtime.win-x64/132.3.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/chromiumembeddedframework.runtime.win-x64.props": {}
+        }
+      },
+      "chromiumembeddedframework.runtime.win-x86/132.3.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/chromiumembeddedframework.runtime.win-x86.props": {}
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net472": "1.0.0"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net472/1.0.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.Notifications/7.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies": "1.0.0",
+          "Microsoft.Windows.SDK.Contracts": "10.0.19041.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Toolkit.Uwp.Notifications.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Toolkit.Uwp.Notifications.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Windows.SDK.Contracts/10.0.19041.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.6.0",
+          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/Windows.AI.MachineLearning.MachineLearningContract.winmd": {},
+          "ref/netstandard2.0/Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivationCameraSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ContactActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.Background.CallsBackgroundContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsPhoneContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsVoipContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.LockScreenCallContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.FullTrustAppContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Preview.InkWorkspace.PreviewInkWorkspaceContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Preview.Notes.PreviewNotesContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Resources.Management.ResourceIndexerContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Search.Core.SearchCoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Search.SearchContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.SocialInfo.SocialInfoContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.StartupTaskContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Wallet.WalletContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Custom.CustomDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.DevicesLowLevelContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Portable.PortableDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Printers.Extensions.ExtensionsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Printers.PrintersContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Scanners.ScannerDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardBackgroundTriggerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardEmulatorContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Sms.LegacySmsApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Embedded.DeviceLockdown.DeviceLockdownContract.winmd": {},
+          "ref/netstandard2.0/Windows.Foundation.FoundationContract.winmd": {},
+          "ref/netstandard2.0/Windows.Foundation.UniversalApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.Input.GamingInputPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.Preview.GamesEnumerationContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.UI.GameChatOverlayContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.UI.GamingUIProviderContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.XboxLive.StorageApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Graphics.Printing3D.Printing3DContract.winmd": {},
+          "ref/netstandard2.0/Windows.Management.Deployment.Preview.DeploymentPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.Management.Workplace.WorkplaceSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.AppBroadcasting.AppBroadcastingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.AppRecording.AppRecordingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppBroadcastContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppCaptureContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppCaptureMetadataContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.CameraCaptureUIContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.GameBarContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Devices.CallControlContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.MediaControlContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Playlists.PlaylistsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Protection.ProtectionRenewalContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.Connectivity.WwanContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.NetworkOperators.LegacyNetworkOperatorsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.NetworkOperators.NetworkOperatorsFdnContract.WinMD": {},
+          "ref/netstandard2.0/Windows.Networking.Sockets.ControlChannelTriggerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.XboxLive.XboxLiveSecureSocketsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Perception.Automation.Core.PerceptionAutomationCoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.Phone.PhoneContract.winmd": {},
+          "ref/netstandard2.0/Windows.Phone.StartScreen.DualSimTileContract.WinMD": {},
+          "ref/netstandard2.0/Windows.Security.EnterpriseData.EnterpriseDataContract.winmd": {},
+          "ref/netstandard2.0/Windows.Security.ExchangeActiveSyncProvisioning.EasContract.winmd": {},
+          "ref/netstandard2.0/Windows.Security.Isolation.Isolatedwindowsenvironmentcontract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Maps.GuidanceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Maps.LocalSearchContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Store.StoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.TargetedContent.TargetedContentContract.winmd": {},
+          "ref/netstandard2.0/Windows.Storage.Provider.CloudFilesContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileHardwareTokenContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileRetailInfoContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileSharedModeContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.SystemManufacturers.SystemManufacturersContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.SystemManagementContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.UserProfile.UserProfileContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.UserProfile.UserProfileLockScreenContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.ApplicationSettings.ApplicationsSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Core.AnimationMetrics.AnimationMetricsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Core.CoreWindowDialogsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Shell.SecurityAppManagerContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.ViewManagement.ViewManagementViewScalingContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.WebUI.Core.WebUICommandBarContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Xaml.Core.Direct.XamlDirectContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Xaml.Hosting.HostingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Web.Http.Diagnostics.HttpDiagnosticsContract.winmd": {},
+          "ref/netstandard2.0/Windows.WinMD": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "buildTransitive/net461/System.Runtime.WindowsRuntime.targets": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime.UI.Xaml/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.6.0"
+        },
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "build/net461/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-arm64": {
+      "CefSharp.Common/132.3.11": {
+        "type": "package",
+        "dependencies": {
+          "chromiumembeddedframework.runtime.win-x64": "[132.3.1]",
+          "chromiumembeddedframework.runtime.win-x86": "[132.3.1]"
+        },
+        "compile": {
+          "lib/net462/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net462/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net462/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net462/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "build": {
+          "buildTransitive/CefSharp.Common.props": {},
+          "buildTransitive/CefSharp.Common.targets": {}
+        }
+      },
+      "CefSharp.WinForms/132.3.11": {
+        "type": "package",
+        "dependencies": {
+          "CefSharp.Common": "[132.3.11]"
+        },
+        "compile": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "chromiumembeddedframework.runtime.win-x64/132.3.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/chromiumembeddedframework.runtime.win-x64.props": {}
+        }
+      },
+      "chromiumembeddedframework.runtime.win-x86/132.3.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/chromiumembeddedframework.runtime.win-x86.props": {}
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net472": "1.0.0"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net472/1.0.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.Notifications/7.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies": "1.0.0",
+          "Microsoft.Windows.SDK.Contracts": "10.0.19041.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Toolkit.Uwp.Notifications.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Toolkit.Uwp.Notifications.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Windows.SDK.Contracts/10.0.19041.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.6.0",
+          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/Windows.AI.MachineLearning.MachineLearningContract.winmd": {},
+          "ref/netstandard2.0/Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivationCameraSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ContactActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.Background.CallsBackgroundContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsPhoneContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsVoipContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.LockScreenCallContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.FullTrustAppContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Preview.InkWorkspace.PreviewInkWorkspaceContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Preview.Notes.PreviewNotesContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Resources.Management.ResourceIndexerContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Search.Core.SearchCoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Search.SearchContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.SocialInfo.SocialInfoContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.StartupTaskContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Wallet.WalletContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Custom.CustomDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.DevicesLowLevelContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Portable.PortableDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Printers.Extensions.ExtensionsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Printers.PrintersContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Scanners.ScannerDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardBackgroundTriggerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardEmulatorContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Sms.LegacySmsApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Embedded.DeviceLockdown.DeviceLockdownContract.winmd": {},
+          "ref/netstandard2.0/Windows.Foundation.FoundationContract.winmd": {},
+          "ref/netstandard2.0/Windows.Foundation.UniversalApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.Input.GamingInputPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.Preview.GamesEnumerationContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.UI.GameChatOverlayContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.UI.GamingUIProviderContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.XboxLive.StorageApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Graphics.Printing3D.Printing3DContract.winmd": {},
+          "ref/netstandard2.0/Windows.Management.Deployment.Preview.DeploymentPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.Management.Workplace.WorkplaceSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.AppBroadcasting.AppBroadcastingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.AppRecording.AppRecordingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppBroadcastContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppCaptureContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppCaptureMetadataContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.CameraCaptureUIContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.GameBarContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Devices.CallControlContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.MediaControlContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Playlists.PlaylistsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Protection.ProtectionRenewalContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.Connectivity.WwanContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.NetworkOperators.LegacyNetworkOperatorsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.NetworkOperators.NetworkOperatorsFdnContract.WinMD": {},
+          "ref/netstandard2.0/Windows.Networking.Sockets.ControlChannelTriggerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.XboxLive.XboxLiveSecureSocketsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Perception.Automation.Core.PerceptionAutomationCoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.Phone.PhoneContract.winmd": {},
+          "ref/netstandard2.0/Windows.Phone.StartScreen.DualSimTileContract.WinMD": {},
+          "ref/netstandard2.0/Windows.Security.EnterpriseData.EnterpriseDataContract.winmd": {},
+          "ref/netstandard2.0/Windows.Security.ExchangeActiveSyncProvisioning.EasContract.winmd": {},
+          "ref/netstandard2.0/Windows.Security.Isolation.Isolatedwindowsenvironmentcontract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Maps.GuidanceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Maps.LocalSearchContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Store.StoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.TargetedContent.TargetedContentContract.winmd": {},
+          "ref/netstandard2.0/Windows.Storage.Provider.CloudFilesContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileHardwareTokenContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileRetailInfoContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileSharedModeContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.SystemManufacturers.SystemManufacturersContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.SystemManagementContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.UserProfile.UserProfileContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.UserProfile.UserProfileLockScreenContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.ApplicationSettings.ApplicationsSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Core.AnimationMetrics.AnimationMetricsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Core.CoreWindowDialogsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Shell.SecurityAppManagerContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.ViewManagement.ViewManagementViewScalingContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.WebUI.Core.WebUICommandBarContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Xaml.Core.Direct.XamlDirectContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Xaml.Hosting.HostingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Web.Http.Diagnostics.HttpDiagnosticsContract.winmd": {},
+          "ref/netstandard2.0/Windows.WinMD": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "buildTransitive/net461/System.Runtime.WindowsRuntime.targets": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime.UI.Xaml/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.6.0"
+        },
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "build/net461/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "CefSharp.Common/132.3.11": {
+        "type": "package",
+        "dependencies": {
+          "chromiumembeddedframework.runtime.win-x64": "[132.3.1]",
+          "chromiumembeddedframework.runtime.win-x86": "[132.3.1]"
+        },
+        "compile": {
+          "lib/net462/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net462/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net462/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net462/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "build": {
+          "buildTransitive/CefSharp.Common.props": {},
+          "buildTransitive/CefSharp.Common.targets": {}
+        }
+      },
+      "CefSharp.WinForms/132.3.11": {
+        "type": "package",
+        "dependencies": {
+          "CefSharp.Common": "[132.3.11]"
+        },
+        "compile": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "chromiumembeddedframework.runtime.win-x64/132.3.1": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/chrome_100_percent.pak": {},
+          "runtimes/win-x64/native/chrome_200_percent.pak": {},
+          "runtimes/win-x64/native/chrome_elf.dll": {},
+          "runtimes/win-x64/native/d3dcompiler_47.dll": {},
+          "runtimes/win-x64/native/dxcompiler.dll": {},
+          "runtimes/win-x64/native/dxil.dll": {},
+          "runtimes/win-x64/native/icudtl.dat": {},
+          "runtimes/win-x64/native/libEGL.dll": {},
+          "runtimes/win-x64/native/libGLESv2.dll": {},
+          "runtimes/win-x64/native/libcef.dll": {},
+          "runtimes/win-x64/native/resources.pak": {},
+          "runtimes/win-x64/native/snapshot_blob.bin": {},
+          "runtimes/win-x64/native/v8_context_snapshot.bin": {},
+          "runtimes/win-x64/native/vk_swiftshader.dll": {},
+          "runtimes/win-x64/native/vk_swiftshader_icd.json": {},
+          "runtimes/win-x64/native/vulkan-1.dll": {}
+        },
+        "build": {
+          "buildTransitive/chromiumembeddedframework.runtime.win-x64.props": {}
+        }
+      },
+      "chromiumembeddedframework.runtime.win-x86/132.3.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/chromiumembeddedframework.runtime.win-x86.props": {}
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net472": "1.0.0"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net472/1.0.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.Notifications/7.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies": "1.0.0",
+          "Microsoft.Windows.SDK.Contracts": "10.0.19041.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Toolkit.Uwp.Notifications.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Toolkit.Uwp.Notifications.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Windows.SDK.Contracts/10.0.19041.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.6.0",
+          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/Windows.AI.MachineLearning.MachineLearningContract.winmd": {},
+          "ref/netstandard2.0/Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivationCameraSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ContactActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.Background.CallsBackgroundContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsPhoneContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsVoipContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.LockScreenCallContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.FullTrustAppContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Preview.InkWorkspace.PreviewInkWorkspaceContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Preview.Notes.PreviewNotesContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Resources.Management.ResourceIndexerContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Search.Core.SearchCoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Search.SearchContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.SocialInfo.SocialInfoContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.StartupTaskContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Wallet.WalletContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Custom.CustomDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.DevicesLowLevelContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Portable.PortableDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Printers.Extensions.ExtensionsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Printers.PrintersContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Scanners.ScannerDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardBackgroundTriggerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardEmulatorContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Sms.LegacySmsApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Embedded.DeviceLockdown.DeviceLockdownContract.winmd": {},
+          "ref/netstandard2.0/Windows.Foundation.FoundationContract.winmd": {},
+          "ref/netstandard2.0/Windows.Foundation.UniversalApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.Input.GamingInputPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.Preview.GamesEnumerationContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.UI.GameChatOverlayContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.UI.GamingUIProviderContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.XboxLive.StorageApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Graphics.Printing3D.Printing3DContract.winmd": {},
+          "ref/netstandard2.0/Windows.Management.Deployment.Preview.DeploymentPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.Management.Workplace.WorkplaceSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.AppBroadcasting.AppBroadcastingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.AppRecording.AppRecordingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppBroadcastContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppCaptureContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppCaptureMetadataContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.CameraCaptureUIContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.GameBarContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Devices.CallControlContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.MediaControlContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Playlists.PlaylistsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Protection.ProtectionRenewalContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.Connectivity.WwanContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.NetworkOperators.LegacyNetworkOperatorsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.NetworkOperators.NetworkOperatorsFdnContract.WinMD": {},
+          "ref/netstandard2.0/Windows.Networking.Sockets.ControlChannelTriggerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.XboxLive.XboxLiveSecureSocketsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Perception.Automation.Core.PerceptionAutomationCoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.Phone.PhoneContract.winmd": {},
+          "ref/netstandard2.0/Windows.Phone.StartScreen.DualSimTileContract.WinMD": {},
+          "ref/netstandard2.0/Windows.Security.EnterpriseData.EnterpriseDataContract.winmd": {},
+          "ref/netstandard2.0/Windows.Security.ExchangeActiveSyncProvisioning.EasContract.winmd": {},
+          "ref/netstandard2.0/Windows.Security.Isolation.Isolatedwindowsenvironmentcontract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Maps.GuidanceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Maps.LocalSearchContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Store.StoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.TargetedContent.TargetedContentContract.winmd": {},
+          "ref/netstandard2.0/Windows.Storage.Provider.CloudFilesContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileHardwareTokenContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileRetailInfoContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileSharedModeContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.SystemManufacturers.SystemManufacturersContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.SystemManagementContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.UserProfile.UserProfileContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.UserProfile.UserProfileLockScreenContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.ApplicationSettings.ApplicationsSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Core.AnimationMetrics.AnimationMetricsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Core.CoreWindowDialogsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Shell.SecurityAppManagerContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.ViewManagement.ViewManagementViewScalingContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.WebUI.Core.WebUICommandBarContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Xaml.Core.Direct.XamlDirectContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Xaml.Hosting.HostingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Web.Http.Diagnostics.HttpDiagnosticsContract.winmd": {},
+          "ref/netstandard2.0/Windows.WinMD": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "buildTransitive/net461/System.Runtime.WindowsRuntime.targets": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime.UI.Xaml/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.6.0"
+        },
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "build/net461/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "CefSharp.Common/132.3.11": {
+        "type": "package",
+        "dependencies": {
+          "chromiumembeddedframework.runtime.win-x64": "[132.3.1]",
+          "chromiumembeddedframework.runtime.win-x86": "[132.3.1]"
+        },
+        "compile": {
+          "lib/net462/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net462/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net462/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net462/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "build": {
+          "buildTransitive/CefSharp.Common.props": {},
+          "buildTransitive/CefSharp.Common.targets": {}
+        }
+      },
+      "CefSharp.WinForms/132.3.11": {
+        "type": "package",
+        "dependencies": {
+          "CefSharp.Common": "[132.3.11]"
+        },
+        "compile": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "chromiumembeddedframework.runtime.win-x64/132.3.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/chromiumembeddedframework.runtime.win-x64.props": {}
+        }
+      },
+      "chromiumembeddedframework.runtime.win-x86/132.3.1": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x86/native/chrome_100_percent.pak": {},
+          "runtimes/win-x86/native/chrome_200_percent.pak": {},
+          "runtimes/win-x86/native/chrome_elf.dll": {},
+          "runtimes/win-x86/native/d3dcompiler_47.dll": {},
+          "runtimes/win-x86/native/icudtl.dat": {},
+          "runtimes/win-x86/native/libEGL.dll": {},
+          "runtimes/win-x86/native/libGLESv2.dll": {},
+          "runtimes/win-x86/native/libcef.dll": {},
+          "runtimes/win-x86/native/resources.pak": {},
+          "runtimes/win-x86/native/snapshot_blob.bin": {},
+          "runtimes/win-x86/native/v8_context_snapshot.bin": {},
+          "runtimes/win-x86/native/vk_swiftshader.dll": {},
+          "runtimes/win-x86/native/vk_swiftshader_icd.json": {},
+          "runtimes/win-x86/native/vulkan-1.dll": {}
+        },
+        "build": {
+          "buildTransitive/chromiumembeddedframework.runtime.win-x86.props": {}
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net472": "1.0.0"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net472/1.0.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.Notifications/7.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies": "1.0.0",
+          "Microsoft.Windows.SDK.Contracts": "10.0.19041.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Toolkit.Uwp.Notifications.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Toolkit.Uwp.Notifications.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Windows.SDK.Contracts/10.0.19041.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.6.0",
+          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/Windows.AI.MachineLearning.MachineLearningContract.winmd": {},
+          "ref/netstandard2.0/Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivationCameraSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ContactActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.Background.CallsBackgroundContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsPhoneContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsVoipContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.LockScreenCallContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.FullTrustAppContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Preview.InkWorkspace.PreviewInkWorkspaceContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Preview.Notes.PreviewNotesContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Resources.Management.ResourceIndexerContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Search.Core.SearchCoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Search.SearchContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.SocialInfo.SocialInfoContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.StartupTaskContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Wallet.WalletContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Custom.CustomDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.DevicesLowLevelContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Portable.PortableDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Printers.Extensions.ExtensionsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Printers.PrintersContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Scanners.ScannerDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardBackgroundTriggerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardEmulatorContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Sms.LegacySmsApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Embedded.DeviceLockdown.DeviceLockdownContract.winmd": {},
+          "ref/netstandard2.0/Windows.Foundation.FoundationContract.winmd": {},
+          "ref/netstandard2.0/Windows.Foundation.UniversalApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.Input.GamingInputPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.Preview.GamesEnumerationContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.UI.GameChatOverlayContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.UI.GamingUIProviderContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.XboxLive.StorageApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Graphics.Printing3D.Printing3DContract.winmd": {},
+          "ref/netstandard2.0/Windows.Management.Deployment.Preview.DeploymentPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.Management.Workplace.WorkplaceSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.AppBroadcasting.AppBroadcastingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.AppRecording.AppRecordingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppBroadcastContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppCaptureContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppCaptureMetadataContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.CameraCaptureUIContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.GameBarContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Devices.CallControlContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.MediaControlContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Playlists.PlaylistsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Protection.ProtectionRenewalContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.Connectivity.WwanContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.NetworkOperators.LegacyNetworkOperatorsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.NetworkOperators.NetworkOperatorsFdnContract.WinMD": {},
+          "ref/netstandard2.0/Windows.Networking.Sockets.ControlChannelTriggerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.XboxLive.XboxLiveSecureSocketsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Perception.Automation.Core.PerceptionAutomationCoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.Phone.PhoneContract.winmd": {},
+          "ref/netstandard2.0/Windows.Phone.StartScreen.DualSimTileContract.WinMD": {},
+          "ref/netstandard2.0/Windows.Security.EnterpriseData.EnterpriseDataContract.winmd": {},
+          "ref/netstandard2.0/Windows.Security.ExchangeActiveSyncProvisioning.EasContract.winmd": {},
+          "ref/netstandard2.0/Windows.Security.Isolation.Isolatedwindowsenvironmentcontract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Maps.GuidanceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Maps.LocalSearchContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Store.StoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.TargetedContent.TargetedContentContract.winmd": {},
+          "ref/netstandard2.0/Windows.Storage.Provider.CloudFilesContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileHardwareTokenContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileRetailInfoContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileSharedModeContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.SystemManufacturers.SystemManufacturersContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.SystemManagementContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.UserProfile.UserProfileContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.UserProfile.UserProfileLockScreenContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.ApplicationSettings.ApplicationsSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Core.AnimationMetrics.AnimationMetricsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Core.CoreWindowDialogsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Shell.SecurityAppManagerContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.ViewManagement.ViewManagementViewScalingContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.WebUI.Core.WebUICommandBarContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Xaml.Core.Direct.XamlDirectContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Xaml.Hosting.HostingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Web.Http.Diagnostics.HttpDiagnosticsContract.winmd": {},
+          "ref/netstandard2.0/Windows.WinMD": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "buildTransitive/net461/System.Runtime.WindowsRuntime.targets": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime.UI.Xaml/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.6.0"
+        },
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "build/net461/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CefSharp.Common/132.3.11": {
+      "sha512": "dvAuRsbKKYs9Y2+0AWw9XHp7r1+bUCIVMxeh60N3XaSMVOFTTWrUF2sHIsuTd7A0dkJnn4Hdx6hDnbpz7mpnKg==",
+      "type": "package",
+      "path": "cefsharp.common/132.3.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CefSharp/x64/CefSharp.BrowserSubprocess.Core.dll",
+        "CefSharp/x64/CefSharp.BrowserSubprocess.Core.pdb",
+        "CefSharp/x64/CefSharp.BrowserSubprocess.exe",
+        "CefSharp/x64/CefSharp.BrowserSubprocess.pdb",
+        "CefSharp/x64/CefSharp.Core.Runtime.dll",
+        "CefSharp/x64/CefSharp.Core.Runtime.pdb",
+        "CefSharp/x64/CefSharp.Core.Runtime.xml",
+        "CefSharp/x86/CefSharp.BrowserSubprocess.Core.dll",
+        "CefSharp/x86/CefSharp.BrowserSubprocess.Core.pdb",
+        "CefSharp/x86/CefSharp.BrowserSubprocess.exe",
+        "CefSharp/x86/CefSharp.BrowserSubprocess.pdb",
+        "CefSharp/x86/CefSharp.Core.Runtime.dll",
+        "CefSharp/x86/CefSharp.Core.Runtime.pdb",
+        "CefSharp/x86/CefSharp.Core.Runtime.xml",
+        "LICENSE",
+        "build/CefSharp.Common.props",
+        "build/CefSharp.Common.targets",
+        "build/app.config.x64.transform",
+        "build/app.config.x86.transform",
+        "buildTransitive/CefSharp.Common.props",
+        "buildTransitive/CefSharp.Common.targets",
+        "cefsharp.common.132.3.11.nupkg.sha512",
+        "cefsharp.common.nuspec",
+        "lib/net462/CefSharp.Core.XML",
+        "lib/net462/CefSharp.Core.dll",
+        "lib/net462/CefSharp.Core.pdb",
+        "lib/net462/CefSharp.XML",
+        "lib/net462/CefSharp.dll",
+        "lib/net462/CefSharp.pdb",
+        "src/CefSharp.BrowserSubprocess.Core/AssemblyInfo.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodCallback.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodCallback.h",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodHandler.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncObjectWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncObjectWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/BindObjectAsyncHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/BrowserSubprocessExecutable.h",
+        "src/CefSharp.BrowserSubprocess.Core/Cef.h",
+        "src/CefSharp.BrowserSubprocess.Core/CefAppUnmanagedWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/CefAppUnmanagedWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/CefBrowserWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptCallbackRegistry.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptCallbackRegistry.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptCallbackWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptMethodHandler.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptMethodHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptMethodWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptMethodWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptObjectWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptObjectWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPostMessageHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPromiseHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPromiseResolverCatch.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPromiseResolverThen.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPropertyHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPropertyWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPropertyWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptRootObjectWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptRootObjectWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/RegisterBoundObjectHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/RegisterBoundObjectRegistry.h",
+        "src/CefSharp.BrowserSubprocess.Core/Serialization/JsObjectsSerialization.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Serialization/JsObjectsSerialization.h",
+        "src/CefSharp.BrowserSubprocess.Core/Serialization/V8Serialization.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Serialization/V8Serialization.h",
+        "src/CefSharp.BrowserSubprocess.Core/Stdafx.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Stdafx.h",
+        "src/CefSharp.BrowserSubprocess.Core/SubProcess.h",
+        "src/CefSharp.BrowserSubprocess.Core/SubProcessApp.h",
+        "src/CefSharp.BrowserSubprocess.Core/TypeUtils.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/TypeUtils.h",
+        "src/CefSharp.BrowserSubprocess.Core/WcfBrowserSubprocessExecutable.h",
+        "src/CefSharp.BrowserSubprocess.Core/WcfEnabledSubProcess.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/WcfEnabledSubProcess.h",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/Browser.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/Browser.h",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/Frame.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/Frame.h",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/V8Context.h",
+        "src/CefSharp.BrowserSubprocess.Core/obj/Win32/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/obj/x64/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/resource.h",
+        "src/CefSharp.BrowserSubprocess.Core/vcclr_local.h",
+        "src/CefSharp.BrowserSubprocess/Program.cs",
+        "src/CefSharp.BrowserSubprocess/Program.netcore.cs",
+        "src/CefSharp.BrowserSubprocess/Properties/AssemblyInfo.cs",
+        "src/CefSharp.BrowserSubprocess/obj/x64/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs",
+        "src/CefSharp.BrowserSubprocess/obj/x86/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs",
+        "src/CefSharp.Core.Runtime/AssemblyInfo.cpp",
+        "src/CefSharp.Core.Runtime/BrowserSettings.h",
+        "src/CefSharp.Core.Runtime/Cef.h",
+        "src/CefSharp.Core.Runtime/CefSettingsBase.h",
+        "src/CefSharp.Core.Runtime/CookieManager.cpp",
+        "src/CefSharp.Core.Runtime/CookieManager.h",
+        "src/CefSharp.Core.Runtime/DragData.h",
+        "src/CefSharp.Core.Runtime/Internals/CefAuthCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefBeforeDownloadCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefBrowserHostWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefBrowserHostWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefBrowserWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefBrowserWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCertificateCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCompletionCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefContextMenuParamsWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefContextMenuParamsWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCookieAccessFilterAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCookieVisitorAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefDeleteCookiesCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefDevToolsMessageObserverAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefDownloadItemCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefFileDialogCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefFrameWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefFrameWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefImageWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefJSDialogCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefMediaAccessCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefMenuModelWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefNavigationEntryVisitorAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefPdfPrintCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefPermissionPromptCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRefCountManaged.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefRefCountManaged.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRegistrationWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRequestCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRequestContextHandlerAdapter.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefRequestContextHandlerAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResolveCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceHandlerAdapter.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceHandlerAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceReadCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceRequestHandlerAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceSkipCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResponseFilterAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResponseWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRunContextMenuCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRunFileDialogCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSchemeHandlerFactoryAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSchemeRegistrarWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSetCookieCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSharpApp.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSslInfoWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefStringVisitorAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefTaskDelegate.h",
+        "src/CefSharp.Core.Runtime/Internals/CefTaskScheduler.h",
+        "src/CefSharp.Core.Runtime/Internals/CefTaskWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefUrlRequestClientAdapter.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefUrlRequestClientAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefValueWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefValueWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefWriteHandlerWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/ClientAdapter.cpp",
+        "src/CefSharp.Core.Runtime/Internals/ClientAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/JavascriptCallbackFactory.cpp",
+        "src/CefSharp.Core.Runtime/Internals/JavascriptCallbackFactory.h",
+        "src/CefSharp.Core.Runtime/Internals/JavascriptCallbackProxy.cpp",
+        "src/CefSharp.Core.Runtime/Internals/JavascriptCallbackProxy.h",
+        "src/CefSharp.Core.Runtime/Internals/MCefRefPtr.h",
+        "src/CefSharp.Core.Runtime/Internals/Messaging/Messages.h",
+        "src/CefSharp.Core.Runtime/Internals/RenderClientAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/ReportUnhandledExceptions.h",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/JsObjectsSerialization.cpp",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/JsObjectsSerialization.h",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/ObjectsSerialization.cpp",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/ObjectsSerialization.h",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/Primitives.cpp",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/Primitives.h",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/V8Serialization.cpp",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/V8Serialization.h",
+        "src/CefSharp.Core.Runtime/Internals/StringUtils.h",
+        "src/CefSharp.Core.Runtime/Internals/TypeConversion.h",
+        "src/CefSharp.Core.Runtime/ManagedCefBrowserAdapter.cpp",
+        "src/CefSharp.Core.Runtime/ManagedCefBrowserAdapter.h",
+        "src/CefSharp.Core.Runtime/NativeMethodWrapper.cpp",
+        "src/CefSharp.Core.Runtime/NativeMethodWrapper.h",
+        "src/CefSharp.Core.Runtime/PopupFeatures.h",
+        "src/CefSharp.Core.Runtime/PostData.h",
+        "src/CefSharp.Core.Runtime/PostDataElement.h",
+        "src/CefSharp.Core.Runtime/Request.cpp",
+        "src/CefSharp.Core.Runtime/Request.h",
+        "src/CefSharp.Core.Runtime/RequestContext.cpp",
+        "src/CefSharp.Core.Runtime/RequestContext.h",
+        "src/CefSharp.Core.Runtime/RequestContextSettings.h",
+        "src/CefSharp.Core.Runtime/Stdafx.cpp",
+        "src/CefSharp.Core.Runtime/Stdafx.h",
+        "src/CefSharp.Core.Runtime/UrlRequest.cpp",
+        "src/CefSharp.Core.Runtime/UrlRequest.h",
+        "src/CefSharp.Core.Runtime/WindowInfo.h",
+        "src/CefSharp.Core.Runtime/obj/Win32/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cpp",
+        "src/CefSharp.Core.Runtime/obj/x64/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cpp",
+        "src/CefSharp.Core.Runtime/resource.h",
+        "src/CefSharp.Core.Runtime/vcclr_local.h",
+        "src/CefSharp.Core/BrowserSettings.cs",
+        "src/CefSharp.Core/BrowserSettings.netcore.cs",
+        "src/CefSharp.Core/BrowserSubprocess/SelfHost.cs",
+        "src/CefSharp.Core/Cef.cs",
+        "src/CefSharp.Core/CefSettingsBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClient.Generated.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClient.Generated.netcore.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClient.Partial.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClient.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClientException.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainEntityBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainErrorResponse.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainEventArgsBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainResponseBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsErrorEventArgs.cs",
+        "src/CefSharp.Core/DevTools/DevToolsEventArgs.cs",
+        "src/CefSharp.Core/DevTools/DevToolsMethodResponse.cs",
+        "src/CefSharp.Core/DevTools/DevToolsMethodResponseContext.cs",
+        "src/CefSharp.Core/DevTools/EventProxy.cs",
+        "src/CefSharp.Core/DevTools/Headers.cs",
+        "src/CefSharp.Core/DevTools/IDevToolsClient.cs",
+        "src/CefSharp.Core/DevTools/IEventProxy.cs",
+        "src/CefSharp.Core/DevTools/MemoryDumpConfig.cs",
+        "src/CefSharp.Core/DevTools/TargetFilter.cs",
+        "src/CefSharp.Core/DevToolsExtensions.cs",
+        "src/CefSharp.Core/DragData.cs",
+        "src/CefSharp.Core/Fluent/DownloadHandler.cs",
+        "src/CefSharp.Core/Fluent/DownloadHandlerBuilder.cs",
+        "src/CefSharp.Core/Fluent/UrlRequestClient.cs",
+        "src/CefSharp.Core/Fluent/UrlRequestClientBuilder.cs",
+        "src/CefSharp.Core/Initializer.cs",
+        "src/CefSharp.Core/ManagedCefBrowserAdapter.cs",
+        "src/CefSharp.Core/ModuleInitializerAttribute.cs",
+        "src/CefSharp.Core/NativeMethodWrapper.cs",
+        "src/CefSharp.Core/ObjectFactory.cs",
+        "src/CefSharp.Core/PostData.cs",
+        "src/CefSharp.Core/PostData.netcore.cs",
+        "src/CefSharp.Core/PostDataElement.cs",
+        "src/CefSharp.Core/PostDataElement.netcore.cs",
+        "src/CefSharp.Core/Properties/AssemblyInfo.cs",
+        "src/CefSharp.Core/Request.cs",
+        "src/CefSharp.Core/Request.netcore.cs",
+        "src/CefSharp.Core/RequestContext.cs",
+        "src/CefSharp.Core/RequestContext.netcore.cs",
+        "src/CefSharp.Core/RequestContextBuilder.cs",
+        "src/CefSharp.Core/RequestContextSettings.cs",
+        "src/CefSharp.Core/UrlRequest.cs",
+        "src/CefSharp.Core/UrlRequest.netcore.cs",
+        "src/CefSharp.Core/WebBrowserExtensionsEx.cs",
+        "src/CefSharp.Core/WindowInfo.cs",
+        "src/CefSharp.Core/WindowInfo.netcore.cs",
+        "src/CefSharp.Core/obj/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs",
+        "src/CefSharp/AcceleratedPaintInfo.cs",
+        "src/CefSharp/AsyncExtensions.cs",
+        "src/CefSharp/BindingOptions.cs",
+        "src/CefSharp/Callback/IAuthCallback.cs",
+        "src/CefSharp/Callback/IBeforeDownloadCallback.cs",
+        "src/CefSharp/Callback/ICallback.cs",
+        "src/CefSharp/Callback/ICompletionCallback.cs",
+        "src/CefSharp/Callback/IDeleteCookiesCallback.cs",
+        "src/CefSharp/Callback/IDevToolsMessageObserver.cs",
+        "src/CefSharp/Callback/IDownloadItemCallback.cs",
+        "src/CefSharp/Callback/IFileDialogCallback.cs",
+        "src/CefSharp/Callback/IJavascriptCallback.cs",
+        "src/CefSharp/Callback/IJsDialogCallback.cs",
+        "src/CefSharp/Callback/IMediaAccessCallback.cs",
+        "src/CefSharp/Callback/IPermissionPromptCallback.cs",
+        "src/CefSharp/Callback/IPrintToPdfCallback.cs",
+        "src/CefSharp/Callback/IRequestCallback.cs",
+        "src/CefSharp/Callback/IResolveCallback.cs",
+        "src/CefSharp/Callback/IResourceReadCallback.cs",
+        "src/CefSharp/Callback/IResourceSkipCallback.cs",
+        "src/CefSharp/Callback/IRunContextMenuCallback.cs",
+        "src/CefSharp/Callback/IRunFileDialogCallback.cs",
+        "src/CefSharp/Callback/ISelectClientCertificateCallback.cs",
+        "src/CefSharp/Callback/ISetCookieCallback.cs",
+        "src/CefSharp/Callback/NoOpCompletionCallback.cs",
+        "src/CefSharp/Callback/TaskCompletionCallback.cs",
+        "src/CefSharp/Callback/TaskDeleteCookiesCallback.cs",
+        "src/CefSharp/Callback/TaskPrintToPdfCallback.cs",
+        "src/CefSharp/Callback/TaskResolveCallback.cs",
+        "src/CefSharp/Callback/TaskSetCookieCallback.cs",
+        "src/CefSharp/CefCustomScheme.cs",
+        "src/CefSharp/CefLibraryHandle.cs",
+        "src/CefSharp/CefRuntime.cs",
+        "src/CefSharp/CefSharpSettings.cs",
+        "src/CefSharp/Cookie.cs",
+        "src/CefSharp/DefaultApp.cs",
+        "src/CefSharp/DependencyChecker.cs",
+        "src/CefSharp/DomNode.cs",
+        "src/CefSharp/DownloadItem.cs",
+        "src/CefSharp/Enums/AlphaType.cs",
+        "src/CefSharp/Enums/CefErrorCode.cs",
+        "src/CefSharp/Enums/CefEventFlags.cs",
+        "src/CefSharp/Enums/CefFileDialogMode.cs",
+        "src/CefSharp/Enums/CefFocusSource.cs",
+        "src/CefSharp/Enums/CefJsDialogType.cs",
+        "src/CefSharp/Enums/CefMenuCommand.cs",
+        "src/CefSharp/Enums/CefPdfPrintMarginType.cs",
+        "src/CefSharp/Enums/CefReturnValue.cs",
+        "src/CefSharp/Enums/CefRuntimeStyle.cs",
+        "src/CefSharp/Enums/CefState.cs",
+        "src/CefSharp/Enums/CefTerminationStatus.cs",
+        "src/CefSharp/Enums/CefThreadIds.cs",
+        "src/CefSharp/Enums/CertStatus.cs",
+        "src/CefSharp/Enums/ChannelLayout.cs",
+        "src/CefSharp/Enums/ColorType.cs",
+        "src/CefSharp/Enums/CompositionUnderlineStyle.cs",
+        "src/CefSharp/Enums/ContentSettingTypes.cs",
+        "src/CefSharp/Enums/ContentSettingValues.cs",
+        "src/CefSharp/Enums/ContextMenuEditState.cs",
+        "src/CefSharp/Enums/ContextMenuMediaState.cs",
+        "src/CefSharp/Enums/ContextMenuMediaType.cs",
+        "src/CefSharp/Enums/ContextMenuType.cs",
+        "src/CefSharp/Enums/CookiePriority.cs",
+        "src/CefSharp/Enums/CookieSameSite.cs",
+        "src/CefSharp/Enums/CursorType.cs",
+        "src/CefSharp/Enums/DragOperationsMask.cs",
+        "src/CefSharp/Enums/FilterStatus.cs",
+        "src/CefSharp/Enums/KeyEventType.cs",
+        "src/CefSharp/Enums/KeyType.cs",
+        "src/CefSharp/Enums/LogSeverity.cs",
+        "src/CefSharp/Enums/MediaAccessPermissionType.cs",
+        "src/CefSharp/Enums/MenuItemType.cs",
+        "src/CefSharp/Enums/MouseButtonType.cs",
+        "src/CefSharp/Enums/PaintElementType.cs",
+        "src/CefSharp/Enums/PermissionRequestResult.cs",
+        "src/CefSharp/Enums/PermissionRequestType.cs",
+        "src/CefSharp/Enums/PointerType.cs",
+        "src/CefSharp/Enums/PostDataElementType.cs",
+        "src/CefSharp/Enums/ReferrerPolicy.cs",
+        "src/CefSharp/Enums/ResourceType.cs",
+        "src/CefSharp/Enums/ResultCode.cs",
+        "src/CefSharp/Enums/SchemeOptions.cs",
+        "src/CefSharp/Enums/SslContentStatus.cs",
+        "src/CefSharp/Enums/SslVersion.cs",
+        "src/CefSharp/Enums/TextInputMode.cs",
+        "src/CefSharp/Enums/TouchEventType.cs",
+        "src/CefSharp/Enums/TransitionType.cs",
+        "src/CefSharp/Enums/UrlRequestFlags.cs",
+        "src/CefSharp/Enums/UrlRequestStatus.cs",
+        "src/CefSharp/Enums/ValueType.cs",
+        "src/CefSharp/Enums/WindowOpenDisposition.cs",
+        "src/CefSharp/Event/AddressChangedEventArgs.cs",
+        "src/CefSharp/Event/ConsoleMessageEventArgs.cs",
+        "src/CefSharp/Event/FrameLoadEndEventArgs.cs",
+        "src/CefSharp/Event/FrameLoadStartEventArgs.cs",
+        "src/CefSharp/Event/JavascriptBindingCompleteEventArgs.cs",
+        "src/CefSharp/Event/JavascriptBindingEventArgs.cs",
+        "src/CefSharp/Event/JavascriptBindingMultipleCompleteEventArgs.cs",
+        "src/CefSharp/Event/JavascriptMessageReceivedEventArgs.cs",
+        "src/CefSharp/Event/LoadErrorEventArgs.cs",
+        "src/CefSharp/Event/LoadingStateChangedEventArgs.cs",
+        "src/CefSharp/Event/StatusMessageEventHandler.cs",
+        "src/CefSharp/Event/TitleChangedEventArgs.cs",
+        "src/CefSharp/Handler/AccessibilityHandler.cs",
+        "src/CefSharp/Handler/AudioHandler.cs",
+        "src/CefSharp/Handler/BrowserProcessHandler.cs",
+        "src/CefSharp/Handler/ContextMenuHandler.cs",
+        "src/CefSharp/Handler/CookieAccessFilter.cs",
+        "src/CefSharp/Handler/DialogHandler.cs",
+        "src/CefSharp/Handler/DisplayHandler.cs",
+        "src/CefSharp/Handler/DownloadHandler.cs",
+        "src/CefSharp/Handler/DragHandler .cs",
+        "src/CefSharp/Handler/FindHandler.cs",
+        "src/CefSharp/Handler/FocusHandler.cs",
+        "src/CefSharp/Handler/FrameHandler.cs",
+        "src/CefSharp/Handler/IAccessibilityHandler.cs",
+        "src/CefSharp/Handler/IAudioHandler.cs",
+        "src/CefSharp/Handler/IBrowserProcessHandler.cs",
+        "src/CefSharp/Handler/IContextMenuHandler.cs",
+        "src/CefSharp/Handler/ICookieAccessFilter.cs",
+        "src/CefSharp/Handler/IDialogHandler.cs",
+        "src/CefSharp/Handler/IDisplayHandler.cs",
+        "src/CefSharp/Handler/IDownloadHandler.cs",
+        "src/CefSharp/Handler/IDragHandler.cs",
+        "src/CefSharp/Handler/IFindHandler.cs",
+        "src/CefSharp/Handler/IFocusHandler.cs",
+        "src/CefSharp/Handler/IFrameHandler.cs",
+        "src/CefSharp/Handler/IJsDialogHandler.cs",
+        "src/CefSharp/Handler/IKeyboardHandler.cs",
+        "src/CefSharp/Handler/ILifeSpanHandler.cs",
+        "src/CefSharp/Handler/ILoadHandler.cs",
+        "src/CefSharp/Handler/IPermissionHandler.cs",
+        "src/CefSharp/Handler/IRenderProcessMessageHandler.cs",
+        "src/CefSharp/Handler/IRequestContextHandler.cs",
+        "src/CefSharp/Handler/IRequestHandler.cs",
+        "src/CefSharp/Handler/IResourceHandler.cs",
+        "src/CefSharp/Handler/IResourceRequestHandler.cs",
+        "src/CefSharp/Handler/JsDialogHandler.cs",
+        "src/CefSharp/Handler/KeyboardHandler.cs",
+        "src/CefSharp/Handler/LifeSpanHandler.cs",
+        "src/CefSharp/Handler/LoadHandler.cs",
+        "src/CefSharp/Handler/PermissionHandler.cs",
+        "src/CefSharp/Handler/RequestContextHandler.cs",
+        "src/CefSharp/Handler/RequestHandler.cs",
+        "src/CefSharp/Handler/ResourceRequestHandler.cs",
+        "src/CefSharp/IApp.cs",
+        "src/CefSharp/IBrowser.cs",
+        "src/CefSharp/IBrowserHost.cs",
+        "src/CefSharp/IBrowserSettings.cs",
+        "src/CefSharp/IChromiumWebBrowserBase.cs",
+        "src/CefSharp/IContextMenuParams.cs",
+        "src/CefSharp/ICookieManager.cs",
+        "src/CefSharp/IDomNode.cs",
+        "src/CefSharp/IDragData.cs",
+        "src/CefSharp/IFrame.cs",
+        "src/CefSharp/IImage.cs",
+        "src/CefSharp/IJavascriptObjectRepository.cs",
+        "src/CefSharp/IMenuModel.cs",
+        "src/CefSharp/IPopupFeatures.cs",
+        "src/CefSharp/IPostData.cs",
+        "src/CefSharp/IPostDataElement.cs",
+        "src/CefSharp/IRegistration.cs",
+        "src/CefSharp/IRequest.cs",
+        "src/CefSharp/IRequestContext.cs",
+        "src/CefSharp/IResourceRequestHandlerFactory.cs",
+        "src/CefSharp/IResponse.cs",
+        "src/CefSharp/IResponseFilter.cs",
+        "src/CefSharp/ISchemeRegistrar.cs",
+        "src/CefSharp/ISslInfo.cs",
+        "src/CefSharp/IUrlRequest.cs",
+        "src/CefSharp/IUrlRequestClient.cs",
+        "src/CefSharp/IValue.cs",
+        "src/CefSharp/IWebBrowser.cs",
+        "src/CefSharp/IWindowInfo.cs",
+        "src/CefSharp/Internals/BaseTimeConverter.cs",
+        "src/CefSharp/Internals/BrowserRefCounter.cs",
+        "src/CefSharp/Internals/ByteArrayResourceHandler.cs",
+        "src/CefSharp/Internals/CefSharpArguments.cs",
+        "src/CefSharp/Internals/CefThread.cs",
+        "src/CefSharp/Internals/CefTimeUtils.cs",
+        "src/CefSharp/Internals/CommandLineArgDictionary.cs",
+        "src/CefSharp/Internals/CommandLineArgsParser.cs",
+        "src/CefSharp/Internals/ConcurrentMethodRunnerQueue.cs",
+        "src/CefSharp/Internals/CookieManagerDecorator.cs",
+        "src/CefSharp/Internals/FileResourceHandler.cs",
+        "src/CefSharp/Internals/FreezableBase.cs",
+        "src/CefSharp/Internals/GlobalContextInitialized.cs",
+        "src/CefSharp/Internals/HeaderNameValueCollection.cs",
+        "src/CefSharp/Internals/IBaseTimeConverter.cs",
+        "src/CefSharp/Internals/IBrowserAdapter.cs",
+        "src/CefSharp/Internals/IBrowserRefCounter.cs",
+        "src/CefSharp/Internals/IJavascriptCallbackFactory.cs",
+        "src/CefSharp/Internals/IJavascriptObjectRepositoryInternal.cs",
+        "src/CefSharp/Internals/IMethodRunnerQueue.cs",
+        "src/CefSharp/Internals/IRenderWebBrowser.cs",
+        "src/CefSharp/Internals/ITaskScheduler.cs",
+        "src/CefSharp/Internals/IWebBrowserInternal.cs",
+        "src/CefSharp/Internals/InMemoryResourceRequestHandler.cs",
+        "src/CefSharp/Internals/InitializeAsyncBrowserProcessHandler.cs",
+        "src/CefSharp/Internals/IntPtrExtensions.cs",
+        "src/CefSharp/Internals/JavascriptCallback.cs",
+        "src/CefSharp/Internals/JavascriptMethod.cs",
+        "src/CefSharp/Internals/JavascriptObject.cs",
+        "src/CefSharp/Internals/JavascriptObjectRepository.cs",
+        "src/CefSharp/Internals/JavascriptProperty.cs",
+        "src/CefSharp/Internals/Json/JsonEnumConverter.cs",
+        "src/CefSharp/Internals/Json/JsonEnumConverterFactory.cs",
+        "src/CefSharp/Internals/MethodInvocation.cs",
+        "src/CefSharp/Internals/MethodInvocationCompleteArgs.cs",
+        "src/CefSharp/Internals/MethodInvocationResult.cs",
+        "src/CefSharp/Internals/MethodParameter.cs",
+        "src/CefSharp/Internals/MethodRunnerQueue.cs",
+        "src/CefSharp/Internals/MimeTypeMapping.cs",
+        "src/CefSharp/Internals/NoFocusHandler.cs",
+        "src/CefSharp/Internals/NoOpBrowserRefCounter.cs",
+        "src/CefSharp/Internals/ParentProcessMonitor.cs",
+        "src/CefSharp/Internals/Partial/ChromiumWebBrowser.Partial.cs",
+        "src/CefSharp/Internals/PathCheck.cs",
+        "src/CefSharp/Internals/PendingTaskRepository.cs",
+        "src/CefSharp/Internals/ReflectionUtils.cs",
+        "src/CefSharp/Internals/RenderprocessClientFactory.cs",
+        "src/CefSharp/Internals/StringCheck.cs",
+        "src/CefSharp/Internals/TaskExtensions.cs",
+        "src/CefSharp/Internals/TaskTimeoutExtensions.cs",
+        "src/CefSharp/Internals/Tasks/LimitedConcurrencyLevelTaskScheduler.cs",
+        "src/CefSharp/Internals/Tasks/SyncContextTaskCompletionSource.cs",
+        "src/CefSharp/Internals/TryCallMethodResult.cs",
+        "src/CefSharp/Internals/Wcf/BrowserProcessResponse.cs",
+        "src/CefSharp/Internals/Wcf/BrowserProcessService.cs",
+        "src/CefSharp/Internals/Wcf/BrowserProcessServiceHost.cs",
+        "src/CefSharp/Internals/Wcf/IBrowserProcess.cs",
+        "src/CefSharp/Internals/Wcf/JavascriptCallbackEndpointBehavior.cs",
+        "src/CefSharp/Internals/Wcf/JavascriptCallbackSurrogate.cs",
+        "src/CefSharp/Internals/Wcf/WcfExtensions.cs",
+        "src/CefSharp/JavascriptBinding/CamelCaseJavascriptNameConverter.cs",
+        "src/CefSharp/JavascriptBinding/IJavascriptNameConverter.cs",
+        "src/CefSharp/JavascriptBinding/JavascriptBindingExtensions.cs",
+        "src/CefSharp/JavascriptBinding/JavascriptBindingSettings.cs",
+        "src/CefSharp/JavascriptBinding/LegacyCamelCaseJavascriptNameConverter.cs",
+        "src/CefSharp/JavascriptException.cs",
+        "src/CefSharp/JavascriptIgnoreAttribute.cs",
+        "src/CefSharp/JavascriptResponse.cs",
+        "src/CefSharp/JavascriptStackFrame.cs",
+        "src/CefSharp/Lagacy/ResourceHandler.cs",
+        "src/CefSharp/LoadUrlAsyncResponse.cs",
+        "src/CefSharp/ModelBinding/BindingMemberInfo.cs",
+        "src/CefSharp/ModelBinding/DefaultBinder.cs",
+        "src/CefSharp/ModelBinding/IAsyncMethodInterceptor.cs",
+        "src/CefSharp/ModelBinding/IBinder.cs",
+        "src/CefSharp/ModelBinding/IMethodInterceptor.cs",
+        "src/CefSharp/ModelBinding/IPropertyInterceptor.cs",
+        "src/CefSharp/ModelBinding/ModelBindingExtensions.cs",
+        "src/CefSharp/NavigationEntry.cs",
+        "src/CefSharp/PdfPrintSettings.cs",
+        "src/CefSharp/PostDataExtensions.cs",
+        "src/CefSharp/Preferences/SetPreferenceResponse.cs",
+        "src/CefSharp/Preferences/SetProxyResponse.cs",
+        "src/CefSharp/Properties/AssemblyInfo.cs",
+        "src/CefSharp/ProxyOptions.cs",
+        "src/CefSharp/RenderProcess/IRenderProcessHandler.cs",
+        "src/CefSharp/RenderProcess/IV8Context.cs",
+        "src/CefSharp/RenderProcess/V8Exception.cs",
+        "src/CefSharp/RequestContextExtensions.cs",
+        "src/CefSharp/ResourceHandler.cs",
+        "src/CefSharp/ResourceRequestHandlerFactory.cs",
+        "src/CefSharp/ResourceRequestHandlerFactoryItem.cs",
+        "src/CefSharp/ResponseFilter/StreamResponseFilter.cs",
+        "src/CefSharp/SchemeHandler/FolderSchemeHandlerFactory.cs",
+        "src/CefSharp/SchemeHandler/ISchemeHandlerFactory.cs",
+        "src/CefSharp/SchemeHandler/OwinResourceHandler.cs",
+        "src/CefSharp/SchemeHandler/OwinSchemeHandlerFactory.cs",
+        "src/CefSharp/SslStatus.cs",
+        "src/CefSharp/Structs/AudioParamaters.cs",
+        "src/CefSharp/Structs/CompositionUnderline.cs",
+        "src/CefSharp/Structs/CursorInfo.cs",
+        "src/CefSharp/Structs/DomRect.cs",
+        "src/CefSharp/Structs/DraggableRegion.cs",
+        "src/CefSharp/Structs/KeyEvent.cs",
+        "src/CefSharp/Structs/MouseEvent.cs",
+        "src/CefSharp/Structs/Point.cs",
+        "src/CefSharp/Structs/Range.cs",
+        "src/CefSharp/Structs/Rect.cs",
+        "src/CefSharp/Structs/ResolveCallbackResult.cs",
+        "src/CefSharp/Structs/ScreenInfo.cs",
+        "src/CefSharp/Structs/Size.cs",
+        "src/CefSharp/Structs/TouchEvent.cs",
+        "src/CefSharp/UrlParts.cs",
+        "src/CefSharp/UrlRequestClient.cs",
+        "src/CefSharp/Visitor/ICookieVisitor.cs",
+        "src/CefSharp/Visitor/INavigationEntryVisitor.cs",
+        "src/CefSharp/Visitor/IStringVisitor.cs",
+        "src/CefSharp/Visitor/TaskCookieVisitor.cs",
+        "src/CefSharp/Visitor/TaskNavigationEntryVisitor.cs",
+        "src/CefSharp/Visitor/TaskStringVisitor.cs",
+        "src/CefSharp/WaitForNavigationAsyncResponse.cs",
+        "src/CefSharp/WaitForSelectorAsyncResponse.cs",
+        "src/CefSharp/Web/HtmlString.cs",
+        "src/CefSharp/Web/JsonString.cs",
+        "src/CefSharp/WebBrowserExtensions.cs",
+        "src/CefSharp/obj/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs"
+      ]
+    },
+    "CefSharp.WinForms/132.3.11": {
+      "sha512": "R5rBn6/XjOR3EsE7Muxoe1JAvuFNFCoVEXlcGZcrvylC4bEE6l61IyL1gVUJ34kDSswMl8vS7U911cJNy73w5w==",
+      "type": "package",
+      "path": "cefsharp.winforms/132.3.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "Readme.txt",
+        "cefsharp.winforms.132.3.11.nupkg.sha512",
+        "cefsharp.winforms.nuspec",
+        "lib/net462/CefSharp.WinForms.XML",
+        "lib/net462/CefSharp.WinForms.dll",
+        "lib/net462/CefSharp.WinForms.pdb",
+        "src/CefSharp.WinForms/CefSettings.cs",
+        "src/CefSharp.WinForms/ChromiumWebBrowser.cs",
+        "src/CefSharp.WinForms/ChromiumWebBrowserDesigner.cs",
+        "src/CefSharp.WinForms/Experimental/ChromiumRenderWidgetHandleFinder.cs",
+        "src/CefSharp.WinForms/Experimental/ChromiumWidgetNativeWindow.cs",
+        "src/CefSharp.WinForms/Handler/DisplayHandler.cs",
+        "src/CefSharp.WinForms/Handler/LifeSpanHandler.cs",
+        "src/CefSharp.WinForms/Handler/LifeSpanHandlerBuilder.cs",
+        "src/CefSharp.WinForms/Handler/LoadHandler.cs",
+        "src/CefSharp.WinForms/Handler/PopupCreation.cs",
+        "src/CefSharp.WinForms/Host/ChromiumHostControl.cs",
+        "src/CefSharp.WinForms/Host/ChromiumHostControlBase.cs",
+        "src/CefSharp.WinForms/IWinFormsChromiumWebBrowser.cs",
+        "src/CefSharp.WinForms/IWinFormsWebBrowser.cs",
+        "src/CefSharp.WinForms/Internals/ControlExtensions.cs",
+        "src/CefSharp.WinForms/Internals/DefaultFocusHandler.cs",
+        "src/CefSharp.WinForms/Internals/NativeMethods.cs",
+        "src/CefSharp.WinForms/Internals/ParentFormMessageInterceptor.cs",
+        "src/CefSharp.WinForms/Properties/AssemblyInfo.cs",
+        "src/CefSharp.WinForms/WebBrowserExtensions.cs",
+        "src/CefSharp.WinForms/obj/Release/net462/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs"
+      ]
+    },
+    "chromiumembeddedframework.runtime.win-x64/132.3.1": {
+      "sha512": "Vt4hzYDcSkP6xwXSld8XNhmhFBLNcrFpPLsSdvKrSaQqobHvIMloSvZdieT6VxJrPxd/NW8wx9IbgZPvXOMNiA==",
+      "type": "package",
+      "path": "chromiumembeddedframework.runtime.win-x64/132.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CEF/win-x64/locales/af.pak",
+        "CEF/win-x64/locales/am.pak",
+        "CEF/win-x64/locales/ar.pak",
+        "CEF/win-x64/locales/bg.pak",
+        "CEF/win-x64/locales/bn.pak",
+        "CEF/win-x64/locales/ca.pak",
+        "CEF/win-x64/locales/cs.pak",
+        "CEF/win-x64/locales/da.pak",
+        "CEF/win-x64/locales/de.pak",
+        "CEF/win-x64/locales/el.pak",
+        "CEF/win-x64/locales/en-GB.pak",
+        "CEF/win-x64/locales/en-US.pak",
+        "CEF/win-x64/locales/es-419.pak",
+        "CEF/win-x64/locales/es.pak",
+        "CEF/win-x64/locales/et.pak",
+        "CEF/win-x64/locales/fa.pak",
+        "CEF/win-x64/locales/fi.pak",
+        "CEF/win-x64/locales/fil.pak",
+        "CEF/win-x64/locales/fr.pak",
+        "CEF/win-x64/locales/gu.pak",
+        "CEF/win-x64/locales/he.pak",
+        "CEF/win-x64/locales/hi.pak",
+        "CEF/win-x64/locales/hr.pak",
+        "CEF/win-x64/locales/hu.pak",
+        "CEF/win-x64/locales/id.pak",
+        "CEF/win-x64/locales/it.pak",
+        "CEF/win-x64/locales/ja.pak",
+        "CEF/win-x64/locales/kn.pak",
+        "CEF/win-x64/locales/ko.pak",
+        "CEF/win-x64/locales/lt.pak",
+        "CEF/win-x64/locales/lv.pak",
+        "CEF/win-x64/locales/ml.pak",
+        "CEF/win-x64/locales/mr.pak",
+        "CEF/win-x64/locales/ms.pak",
+        "CEF/win-x64/locales/nb.pak",
+        "CEF/win-x64/locales/nl.pak",
+        "CEF/win-x64/locales/pl.pak",
+        "CEF/win-x64/locales/pt-BR.pak",
+        "CEF/win-x64/locales/pt-PT.pak",
+        "CEF/win-x64/locales/ro.pak",
+        "CEF/win-x64/locales/ru.pak",
+        "CEF/win-x64/locales/sk.pak",
+        "CEF/win-x64/locales/sl.pak",
+        "CEF/win-x64/locales/sr.pak",
+        "CEF/win-x64/locales/sv.pak",
+        "CEF/win-x64/locales/sw.pak",
+        "CEF/win-x64/locales/ta.pak",
+        "CEF/win-x64/locales/te.pak",
+        "CEF/win-x64/locales/th.pak",
+        "CEF/win-x64/locales/tr.pak",
+        "CEF/win-x64/locales/uk.pak",
+        "CEF/win-x64/locales/ur.pak",
+        "CEF/win-x64/locales/vi.pak",
+        "CEF/win-x64/locales/zh-CN.pak",
+        "CEF/win-x64/locales/zh-TW.pak",
+        "LICENSE.txt",
+        "README.txt",
+        "build/chromiumembeddedframework.runtime.win-x64.props",
+        "buildTransitive/chromiumembeddedframework.runtime.win-x64.props",
+        "chromiumembeddedframework.runtime.win-x64.132.3.1.nupkg.sha512",
+        "chromiumembeddedframework.runtime.win-x64.nuspec",
+        "images/cef128x128.png",
+        "runtimes/win-x64/native/chrome_100_percent.pak",
+        "runtimes/win-x64/native/chrome_200_percent.pak",
+        "runtimes/win-x64/native/chrome_elf.dll",
+        "runtimes/win-x64/native/d3dcompiler_47.dll",
+        "runtimes/win-x64/native/dxcompiler.dll",
+        "runtimes/win-x64/native/dxil.dll",
+        "runtimes/win-x64/native/icudtl.dat",
+        "runtimes/win-x64/native/libEGL.dll",
+        "runtimes/win-x64/native/libGLESv2.dll",
+        "runtimes/win-x64/native/libcef.dll",
+        "runtimes/win-x64/native/resources.pak",
+        "runtimes/win-x64/native/snapshot_blob.bin",
+        "runtimes/win-x64/native/v8_context_snapshot.bin",
+        "runtimes/win-x64/native/vk_swiftshader.dll",
+        "runtimes/win-x64/native/vk_swiftshader_icd.json",
+        "runtimes/win-x64/native/vulkan-1.dll"
+      ]
+    },
+    "chromiumembeddedframework.runtime.win-x86/132.3.1": {
+      "sha512": "8OIlLhEkNdISx7BLkf15jOlhat/zSlg/+qH6qRMXYMgYsf0LQysxjejOOk3uKMkC784rz+u+M84Hlp+jA+545A==",
+      "type": "package",
+      "path": "chromiumembeddedframework.runtime.win-x86/132.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CEF/win-x86/locales/af.pak",
+        "CEF/win-x86/locales/am.pak",
+        "CEF/win-x86/locales/ar.pak",
+        "CEF/win-x86/locales/bg.pak",
+        "CEF/win-x86/locales/bn.pak",
+        "CEF/win-x86/locales/ca.pak",
+        "CEF/win-x86/locales/cs.pak",
+        "CEF/win-x86/locales/da.pak",
+        "CEF/win-x86/locales/de.pak",
+        "CEF/win-x86/locales/el.pak",
+        "CEF/win-x86/locales/en-GB.pak",
+        "CEF/win-x86/locales/en-US.pak",
+        "CEF/win-x86/locales/es-419.pak",
+        "CEF/win-x86/locales/es.pak",
+        "CEF/win-x86/locales/et.pak",
+        "CEF/win-x86/locales/fa.pak",
+        "CEF/win-x86/locales/fi.pak",
+        "CEF/win-x86/locales/fil.pak",
+        "CEF/win-x86/locales/fr.pak",
+        "CEF/win-x86/locales/gu.pak",
+        "CEF/win-x86/locales/he.pak",
+        "CEF/win-x86/locales/hi.pak",
+        "CEF/win-x86/locales/hr.pak",
+        "CEF/win-x86/locales/hu.pak",
+        "CEF/win-x86/locales/id.pak",
+        "CEF/win-x86/locales/it.pak",
+        "CEF/win-x86/locales/ja.pak",
+        "CEF/win-x86/locales/kn.pak",
+        "CEF/win-x86/locales/ko.pak",
+        "CEF/win-x86/locales/lt.pak",
+        "CEF/win-x86/locales/lv.pak",
+        "CEF/win-x86/locales/ml.pak",
+        "CEF/win-x86/locales/mr.pak",
+        "CEF/win-x86/locales/ms.pak",
+        "CEF/win-x86/locales/nb.pak",
+        "CEF/win-x86/locales/nl.pak",
+        "CEF/win-x86/locales/pl.pak",
+        "CEF/win-x86/locales/pt-BR.pak",
+        "CEF/win-x86/locales/pt-PT.pak",
+        "CEF/win-x86/locales/ro.pak",
+        "CEF/win-x86/locales/ru.pak",
+        "CEF/win-x86/locales/sk.pak",
+        "CEF/win-x86/locales/sl.pak",
+        "CEF/win-x86/locales/sr.pak",
+        "CEF/win-x86/locales/sv.pak",
+        "CEF/win-x86/locales/sw.pak",
+        "CEF/win-x86/locales/ta.pak",
+        "CEF/win-x86/locales/te.pak",
+        "CEF/win-x86/locales/th.pak",
+        "CEF/win-x86/locales/tr.pak",
+        "CEF/win-x86/locales/uk.pak",
+        "CEF/win-x86/locales/ur.pak",
+        "CEF/win-x86/locales/vi.pak",
+        "CEF/win-x86/locales/zh-CN.pak",
+        "CEF/win-x86/locales/zh-TW.pak",
+        "LICENSE.txt",
+        "README.txt",
+        "build/chromiumembeddedframework.runtime.win-x86.props",
+        "buildTransitive/chromiumembeddedframework.runtime.win-x86.props",
+        "chromiumembeddedframework.runtime.win-x86.132.3.1.nupkg.sha512",
+        "chromiumembeddedframework.runtime.win-x86.nuspec",
+        "images/cef128x128.png",
+        "runtimes/win-x86/native/chrome_100_percent.pak",
+        "runtimes/win-x86/native/chrome_200_percent.pak",
+        "runtimes/win-x86/native/chrome_elf.dll",
+        "runtimes/win-x86/native/d3dcompiler_47.dll",
+        "runtimes/win-x86/native/icudtl.dat",
+        "runtimes/win-x86/native/libEGL.dll",
+        "runtimes/win-x86/native/libGLESv2.dll",
+        "runtimes/win-x86/native/libcef.dll",
+        "runtimes/win-x86/native/resources.pak",
+        "runtimes/win-x86/native/snapshot_blob.bin",
+        "runtimes/win-x86/native/v8_context_snapshot.bin",
+        "runtimes/win-x86/native/vk_swiftshader.dll",
+        "runtimes/win-x86/native/vk_swiftshader_icd.json",
+        "runtimes/win-x86/native/vulkan-1.dll"
+      ]
+    },
+    "Microsoft.NETFramework.ReferenceAssemblies/1.0.0": {
+      "sha512": "7D2TMufjGiowmt0E941kVoTIS+GTNzaPopuzM1/1LSaJAdJdBrVP0SkZW7AgDd0a2U1DjsIeaKG1wxGVBNLDMw==",
+      "type": "package",
+      "path": "microsoft.netframework.referenceassemblies/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+        "microsoft.netframework.referenceassemblies.nuspec"
+      ]
+    },
+    "Microsoft.NETFramework.ReferenceAssemblies.net472/1.0.0": {
+      "sha512": "VI0f22cH/xOlXLUVY7t6vr2Gi7cg0vzwpspNGz5isRusyspZblF7jJMw49E8mF1m071JyeVmZVkIK9c5kbiyFA==",
+      "type": "package",
+      "path": "microsoft.netframework.referenceassemblies.net472/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/.NETFramework/v4.7.2/Accessibility.dll",
+        "build/.NETFramework/v4.7.2/Accessibility.xml",
+        "build/.NETFramework/v4.7.2/CustomMarshalers.dll",
+        "build/.NETFramework/v4.7.2/CustomMarshalers.xml",
+        "build/.NETFramework/v4.7.2/Facades/Microsoft.Win32.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.AppContext.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Collections.Concurrent.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Collections.NonGeneric.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Collections.Specialized.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Collections.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ComponentModel.Annotations.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ComponentModel.EventBasedAsync.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ComponentModel.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ComponentModel.TypeConverter.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ComponentModel.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Console.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Data.Common.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.Contracts.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.Debug.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.FileVersionInfo.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.Process.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.StackTrace.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.TextWriterTraceListener.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.Tools.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.TraceSource.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Drawing.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Dynamic.Runtime.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Globalization.Calendars.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Globalization.Extensions.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Globalization.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.Compression.ZipFile.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.FileSystem.DriveInfo.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.FileSystem.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.FileSystem.Watcher.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.FileSystem.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.IsolatedStorage.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.MemoryMappedFiles.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.Pipes.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.UnmanagedMemoryStream.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Linq.Expressions.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Linq.Parallel.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Linq.Queryable.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Linq.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.Http.Rtc.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.NameResolution.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.NetworkInformation.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.Ping.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.Requests.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.Security.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.Sockets.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.WebHeaderCollection.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.WebSockets.Client.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.WebSockets.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ObjectModel.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Reflection.Emit.ILGeneration.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Reflection.Emit.Lightweight.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Reflection.Emit.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Reflection.Extensions.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Reflection.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Reflection.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Resources.Reader.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Resources.ResourceManager.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Resources.Writer.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.CompilerServices.VisualC.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Extensions.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Handles.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.InteropServices.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Numerics.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Serialization.Formatters.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Serialization.Json.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Serialization.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Serialization.Xml.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Claims.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Cryptography.Algorithms.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Cryptography.Csp.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Cryptography.Encoding.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Cryptography.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Cryptography.X509Certificates.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Principal.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.SecureString.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ServiceModel.Duplex.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ServiceModel.Http.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ServiceModel.NetTcp.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ServiceModel.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ServiceModel.Security.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Text.Encoding.Extensions.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Text.Encoding.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Text.RegularExpressions.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.Overlapped.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.Tasks.Parallel.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.Tasks.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.Thread.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.ThreadPool.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.Timer.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ValueTuple.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Xml.ReaderWriter.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Xml.XDocument.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Xml.XPath.XDocument.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Xml.XPath.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Xml.XmlDocument.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Xml.XmlSerializer.dll",
+        "build/.NETFramework/v4.7.2/Facades/netstandard.dll",
+        "build/.NETFramework/v4.7.2/ISymWrapper.dll",
+        "build/.NETFramework/v4.7.2/ISymWrapper.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Activities.Build.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Activities.Build.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Conversion.v4.0.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Conversion.v4.0.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Engine.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Engine.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Framework.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Framework.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Tasks.v4.0.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Tasks.v4.0.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Utilities.v4.0.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Utilities.v4.0.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.CSharp.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.CSharp.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.JScript.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.JScript.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualBasic.Compatibility.Data.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualBasic.Compatibility.Data.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualBasic.Compatibility.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualBasic.Compatibility.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualBasic.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualBasic.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualC.STLCLR.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualC.STLCLR.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualC.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualC.xml",
+        "build/.NETFramework/v4.7.2/PermissionSets/FullTrust.xml",
+        "build/.NETFramework/v4.7.2/PermissionSets/Internet.xml",
+        "build/.NETFramework/v4.7.2/PermissionSets/LocalIntranet.xml",
+        "build/.NETFramework/v4.7.2/PresentationBuildTasks.dll",
+        "build/.NETFramework/v4.7.2/PresentationBuildTasks.xml",
+        "build/.NETFramework/v4.7.2/PresentationCore.dll",
+        "build/.NETFramework/v4.7.2/PresentationCore.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Aero.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Aero.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Aero2.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Aero2.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.AeroLite.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.AeroLite.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Classic.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Classic.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Luna.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Luna.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Royale.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Royale.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.xml",
+        "build/.NETFramework/v4.7.2/ReachFramework.dll",
+        "build/.NETFramework/v4.7.2/ReachFramework.xml",
+        "build/.NETFramework/v4.7.2/RedistList/FrameworkList.xml",
+        "build/.NETFramework/v4.7.2/System.Activities.Core.Presentation.dll",
+        "build/.NETFramework/v4.7.2/System.Activities.Core.Presentation.xml",
+        "build/.NETFramework/v4.7.2/System.Activities.DurableInstancing.dll",
+        "build/.NETFramework/v4.7.2/System.Activities.DurableInstancing.xml",
+        "build/.NETFramework/v4.7.2/System.Activities.Presentation.dll",
+        "build/.NETFramework/v4.7.2/System.Activities.Presentation.xml",
+        "build/.NETFramework/v4.7.2/System.Activities.dll",
+        "build/.NETFramework/v4.7.2/System.Activities.xml",
+        "build/.NETFramework/v4.7.2/System.AddIn.Contract.dll",
+        "build/.NETFramework/v4.7.2/System.AddIn.Contract.xml",
+        "build/.NETFramework/v4.7.2/System.AddIn.dll",
+        "build/.NETFramework/v4.7.2/System.AddIn.xml",
+        "build/.NETFramework/v4.7.2/System.ComponentModel.Composition.Registration.dll",
+        "build/.NETFramework/v4.7.2/System.ComponentModel.Composition.Registration.xml",
+        "build/.NETFramework/v4.7.2/System.ComponentModel.Composition.dll",
+        "build/.NETFramework/v4.7.2/System.ComponentModel.Composition.xml",
+        "build/.NETFramework/v4.7.2/System.ComponentModel.DataAnnotations.dll",
+        "build/.NETFramework/v4.7.2/System.ComponentModel.DataAnnotations.xml",
+        "build/.NETFramework/v4.7.2/System.Configuration.Install.dll",
+        "build/.NETFramework/v4.7.2/System.Configuration.Install.xml",
+        "build/.NETFramework/v4.7.2/System.Configuration.dll",
+        "build/.NETFramework/v4.7.2/System.Configuration.xml",
+        "build/.NETFramework/v4.7.2/System.Core.dll",
+        "build/.NETFramework/v4.7.2/System.Core.xml",
+        "build/.NETFramework/v4.7.2/System.Data.DataSetExtensions.dll",
+        "build/.NETFramework/v4.7.2/System.Data.DataSetExtensions.xml",
+        "build/.NETFramework/v4.7.2/System.Data.Entity.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Data.Entity.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Data.Entity.dll",
+        "build/.NETFramework/v4.7.2/System.Data.Entity.xml",
+        "build/.NETFramework/v4.7.2/System.Data.Linq.dll",
+        "build/.NETFramework/v4.7.2/System.Data.Linq.xml",
+        "build/.NETFramework/v4.7.2/System.Data.OracleClient.dll",
+        "build/.NETFramework/v4.7.2/System.Data.OracleClient.xml",
+        "build/.NETFramework/v4.7.2/System.Data.Services.Client.dll",
+        "build/.NETFramework/v4.7.2/System.Data.Services.Client.xml",
+        "build/.NETFramework/v4.7.2/System.Data.Services.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Data.Services.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Data.Services.dll",
+        "build/.NETFramework/v4.7.2/System.Data.Services.xml",
+        "build/.NETFramework/v4.7.2/System.Data.SqlXml.dll",
+        "build/.NETFramework/v4.7.2/System.Data.SqlXml.xml",
+        "build/.NETFramework/v4.7.2/System.Data.dll",
+        "build/.NETFramework/v4.7.2/System.Data.xml",
+        "build/.NETFramework/v4.7.2/System.Deployment.dll",
+        "build/.NETFramework/v4.7.2/System.Deployment.xml",
+        "build/.NETFramework/v4.7.2/System.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Device.dll",
+        "build/.NETFramework/v4.7.2/System.Device.xml",
+        "build/.NETFramework/v4.7.2/System.Diagnostics.Tracing.dll",
+        "build/.NETFramework/v4.7.2/System.Diagnostics.Tracing.xml",
+        "build/.NETFramework/v4.7.2/System.DirectoryServices.AccountManagement.dll",
+        "build/.NETFramework/v4.7.2/System.DirectoryServices.AccountManagement.xml",
+        "build/.NETFramework/v4.7.2/System.DirectoryServices.Protocols.dll",
+        "build/.NETFramework/v4.7.2/System.DirectoryServices.Protocols.xml",
+        "build/.NETFramework/v4.7.2/System.DirectoryServices.dll",
+        "build/.NETFramework/v4.7.2/System.DirectoryServices.xml",
+        "build/.NETFramework/v4.7.2/System.Drawing.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Drawing.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Drawing.dll",
+        "build/.NETFramework/v4.7.2/System.Drawing.xml",
+        "build/.NETFramework/v4.7.2/System.Dynamic.dll",
+        "build/.NETFramework/v4.7.2/System.EnterpriseServices.Thunk.dll",
+        "build/.NETFramework/v4.7.2/System.EnterpriseServices.Wrapper.dll",
+        "build/.NETFramework/v4.7.2/System.EnterpriseServices.dll",
+        "build/.NETFramework/v4.7.2/System.EnterpriseServices.xml",
+        "build/.NETFramework/v4.7.2/System.IO.Compression.FileSystem.dll",
+        "build/.NETFramework/v4.7.2/System.IO.Compression.FileSystem.xml",
+        "build/.NETFramework/v4.7.2/System.IO.Compression.dll",
+        "build/.NETFramework/v4.7.2/System.IO.Compression.xml",
+        "build/.NETFramework/v4.7.2/System.IO.Log.dll",
+        "build/.NETFramework/v4.7.2/System.IO.Log.xml",
+        "build/.NETFramework/v4.7.2/System.IdentityModel.Selectors.dll",
+        "build/.NETFramework/v4.7.2/System.IdentityModel.Selectors.xml",
+        "build/.NETFramework/v4.7.2/System.IdentityModel.Services.dll",
+        "build/.NETFramework/v4.7.2/System.IdentityModel.Services.xml",
+        "build/.NETFramework/v4.7.2/System.IdentityModel.dll",
+        "build/.NETFramework/v4.7.2/System.IdentityModel.xml",
+        "build/.NETFramework/v4.7.2/System.Linq.xml",
+        "build/.NETFramework/v4.7.2/System.Management.Instrumentation.dll",
+        "build/.NETFramework/v4.7.2/System.Management.Instrumentation.xml",
+        "build/.NETFramework/v4.7.2/System.Management.dll",
+        "build/.NETFramework/v4.7.2/System.Management.xml",
+        "build/.NETFramework/v4.7.2/System.Messaging.dll",
+        "build/.NETFramework/v4.7.2/System.Messaging.xml",
+        "build/.NETFramework/v4.7.2/System.Net.Http.WebRequest.dll",
+        "build/.NETFramework/v4.7.2/System.Net.Http.WebRequest.xml",
+        "build/.NETFramework/v4.7.2/System.Net.Http.dll",
+        "build/.NETFramework/v4.7.2/System.Net.Http.xml",
+        "build/.NETFramework/v4.7.2/System.Net.dll",
+        "build/.NETFramework/v4.7.2/System.Net.xml",
+        "build/.NETFramework/v4.7.2/System.Numerics.dll",
+        "build/.NETFramework/v4.7.2/System.Numerics.xml",
+        "build/.NETFramework/v4.7.2/System.Printing.dll",
+        "build/.NETFramework/v4.7.2/System.Printing.xml",
+        "build/.NETFramework/v4.7.2/System.Reflection.Context.dll",
+        "build/.NETFramework/v4.7.2/System.Reflection.Context.xml",
+        "build/.NETFramework/v4.7.2/System.Runtime.Caching.dll",
+        "build/.NETFramework/v4.7.2/System.Runtime.Caching.xml",
+        "build/.NETFramework/v4.7.2/System.Runtime.DurableInstancing.dll",
+        "build/.NETFramework/v4.7.2/System.Runtime.DurableInstancing.xml",
+        "build/.NETFramework/v4.7.2/System.Runtime.Remoting.dll",
+        "build/.NETFramework/v4.7.2/System.Runtime.Remoting.xml",
+        "build/.NETFramework/v4.7.2/System.Runtime.Serialization.Formatters.Soap.dll",
+        "build/.NETFramework/v4.7.2/System.Runtime.Serialization.Formatters.Soap.xml",
+        "build/.NETFramework/v4.7.2/System.Runtime.Serialization.dll",
+        "build/.NETFramework/v4.7.2/System.Runtime.Serialization.xml",
+        "build/.NETFramework/v4.7.2/System.Security.dll",
+        "build/.NETFramework/v4.7.2/System.Security.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Activation.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Activation.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Activities.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Activities.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Channels.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Channels.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Discovery.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Discovery.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Routing.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Routing.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Web.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Web.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceProcess.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceProcess.xml",
+        "build/.NETFramework/v4.7.2/System.Speech.dll",
+        "build/.NETFramework/v4.7.2/System.Speech.xml",
+        "build/.NETFramework/v4.7.2/System.Threading.Tasks.Dataflow.xml",
+        "build/.NETFramework/v4.7.2/System.Transactions.dll",
+        "build/.NETFramework/v4.7.2/System.Transactions.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Abstractions.dll",
+        "build/.NETFramework/v4.7.2/System.Web.ApplicationServices.dll",
+        "build/.NETFramework/v4.7.2/System.Web.ApplicationServices.xml",
+        "build/.NETFramework/v4.7.2/System.Web.DataVisualization.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Web.DataVisualization.dll",
+        "build/.NETFramework/v4.7.2/System.Web.DataVisualization.xml",
+        "build/.NETFramework/v4.7.2/System.Web.DynamicData.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Web.DynamicData.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Web.DynamicData.dll",
+        "build/.NETFramework/v4.7.2/System.Web.DynamicData.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Entity.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Entity.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Entity.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Entity.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Extensions.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Extensions.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Extensions.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Extensions.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Mobile.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Mobile.xml",
+        "build/.NETFramework/v4.7.2/System.Web.RegularExpressions.dll",
+        "build/.NETFramework/v4.7.2/System.Web.RegularExpressions.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Routing.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Services.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Services.xml",
+        "build/.NETFramework/v4.7.2/System.Web.dll",
+        "build/.NETFramework/v4.7.2/System.Web.xml",
+        "build/.NETFramework/v4.7.2/System.Windows.Controls.Ribbon.dll",
+        "build/.NETFramework/v4.7.2/System.Windows.Controls.Ribbon.xml",
+        "build/.NETFramework/v4.7.2/System.Windows.Forms.DataVisualization.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Windows.Forms.DataVisualization.dll",
+        "build/.NETFramework/v4.7.2/System.Windows.Forms.DataVisualization.xml",
+        "build/.NETFramework/v4.7.2/System.Windows.Forms.dll",
+        "build/.NETFramework/v4.7.2/System.Windows.Forms.xml",
+        "build/.NETFramework/v4.7.2/System.Windows.Input.Manipulations.dll",
+        "build/.NETFramework/v4.7.2/System.Windows.Input.Manipulations.xml",
+        "build/.NETFramework/v4.7.2/System.Windows.Presentation.dll",
+        "build/.NETFramework/v4.7.2/System.Windows.Presentation.xml",
+        "build/.NETFramework/v4.7.2/System.Windows.dll",
+        "build/.NETFramework/v4.7.2/System.Workflow.Activities.dll",
+        "build/.NETFramework/v4.7.2/System.Workflow.Activities.xml",
+        "build/.NETFramework/v4.7.2/System.Workflow.ComponentModel.dll",
+        "build/.NETFramework/v4.7.2/System.Workflow.ComponentModel.xml",
+        "build/.NETFramework/v4.7.2/System.Workflow.Runtime.dll",
+        "build/.NETFramework/v4.7.2/System.Workflow.Runtime.xml",
+        "build/.NETFramework/v4.7.2/System.WorkflowServices.dll",
+        "build/.NETFramework/v4.7.2/System.WorkflowServices.xml",
+        "build/.NETFramework/v4.7.2/System.Xaml.dll",
+        "build/.NETFramework/v4.7.2/System.Xaml.xml",
+        "build/.NETFramework/v4.7.2/System.Xml.Linq.dll",
+        "build/.NETFramework/v4.7.2/System.Xml.Linq.xml",
+        "build/.NETFramework/v4.7.2/System.Xml.Serialization.dll",
+        "build/.NETFramework/v4.7.2/System.Xml.dll",
+        "build/.NETFramework/v4.7.2/System.Xml.xml",
+        "build/.NETFramework/v4.7.2/System.dll",
+        "build/.NETFramework/v4.7.2/System.xml",
+        "build/.NETFramework/v4.7.2/UIAutomationClient.dll",
+        "build/.NETFramework/v4.7.2/UIAutomationClient.xml",
+        "build/.NETFramework/v4.7.2/UIAutomationClientsideProviders.dll",
+        "build/.NETFramework/v4.7.2/UIAutomationClientsideProviders.xml",
+        "build/.NETFramework/v4.7.2/UIAutomationProvider.dll",
+        "build/.NETFramework/v4.7.2/UIAutomationProvider.xml",
+        "build/.NETFramework/v4.7.2/UIAutomationTypes.dll",
+        "build/.NETFramework/v4.7.2/UIAutomationTypes.xml",
+        "build/.NETFramework/v4.7.2/WindowsBase.dll",
+        "build/.NETFramework/v4.7.2/WindowsBase.xml",
+        "build/.NETFramework/v4.7.2/WindowsFormsIntegration.dll",
+        "build/.NETFramework/v4.7.2/WindowsFormsIntegration.xml",
+        "build/.NETFramework/v4.7.2/XamlBuildTask.dll",
+        "build/.NETFramework/v4.7.2/XamlBuildTask.xml",
+        "build/.NETFramework/v4.7.2/mscorlib.dll",
+        "build/.NETFramework/v4.7.2/mscorlib.xml",
+        "build/.NETFramework/v4.7.2/namespaces.xml",
+        "build/.NETFramework/v4.7.2/sysglobl.dll",
+        "build/.NETFramework/v4.7.2/sysglobl.xml",
+        "build/Microsoft.NETFramework.ReferenceAssemblies.net472.targets",
+        "microsoft.netframework.referenceassemblies.net472.1.0.0.nupkg.sha512",
+        "microsoft.netframework.referenceassemblies.net472.nuspec"
+      ]
+    },
+    "Microsoft.Toolkit.Uwp.Notifications/7.1.3": {
+      "sha512": "A1dglAzb24gjehmb7DwGd07mfyZ1gacAK7ObE0KwDlRc3mayH2QW7cSOy3TkkyELjLg19OQBuhPOj4SpXET9lg==",
+      "type": "package",
+      "path": "microsoft.toolkit.uwp.notifications/7.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "build/native/Microsoft.Toolkit.Uwp.Notifications.targets",
+        "lib/native/Microsoft.Toolkit.Uwp.Notifications.pdb",
+        "lib/native/Microsoft.Toolkit.Uwp.Notifications.pri",
+        "lib/native/Microsoft.Toolkit.Uwp.Notifications.winmd",
+        "lib/native/Microsoft.Toolkit.Uwp.Notifications.xml",
+        "lib/net461/Microsoft.Toolkit.Uwp.Notifications.dll",
+        "lib/net461/Microsoft.Toolkit.Uwp.Notifications.pdb",
+        "lib/net461/Microsoft.Toolkit.Uwp.Notifications.xml",
+        "lib/net5.0-windows10.0.17763/Microsoft.Toolkit.Uwp.Notifications.dll",
+        "lib/net5.0-windows10.0.17763/Microsoft.Toolkit.Uwp.Notifications.pdb",
+        "lib/net5.0-windows10.0.17763/Microsoft.Toolkit.Uwp.Notifications.xml",
+        "lib/net5.0/Microsoft.Toolkit.Uwp.Notifications.dll",
+        "lib/net5.0/Microsoft.Toolkit.Uwp.Notifications.pdb",
+        "lib/net5.0/Microsoft.Toolkit.Uwp.Notifications.xml",
+        "lib/netcoreapp3.1/Microsoft.Toolkit.Uwp.Notifications.dll",
+        "lib/netcoreapp3.1/Microsoft.Toolkit.Uwp.Notifications.pdb",
+        "lib/netcoreapp3.1/Microsoft.Toolkit.Uwp.Notifications.xml",
+        "lib/netstandard1.4/Microsoft.Toolkit.Uwp.Notifications.dll",
+        "lib/netstandard1.4/Microsoft.Toolkit.Uwp.Notifications.pdb",
+        "lib/netstandard1.4/Microsoft.Toolkit.Uwp.Notifications.xml",
+        "lib/uap10.0.10240/Microsoft.Toolkit.Uwp.Notifications.pdb",
+        "lib/uap10.0.10240/Microsoft.Toolkit.Uwp.Notifications.pri",
+        "lib/uap10.0.10240/Microsoft.Toolkit.Uwp.Notifications.winmd",
+        "lib/uap10.0.10240/Microsoft.Toolkit.Uwp.Notifications.xml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Notifications.dll",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Notifications.pdb",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Notifications.pri",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Notifications.xml",
+        "microsoft.toolkit.uwp.notifications.7.1.3.nupkg.sha512",
+        "microsoft.toolkit.uwp.notifications.nuspec"
+      ]
+    },
+    "Microsoft.Windows.SDK.Contracts/10.0.19041.1": {
+      "sha512": "sgDwuoyubbLFNJR/BINbvfSNRiglF91D+Q0uEAkU4ZTO5Hgbnu8+gA4TCc65S56e1kK7gvR1+H4kphkDTr+9bw==",
+      "type": "package",
+      "path": "microsoft.windows.sdk.contracts/10.0.19041.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.Windows.SDK.Contracts.props",
+        "build/Microsoft.Windows.SDK.Contracts.targets",
+        "c/Catalogs/cat353be8f91891a6a5761b9ac157fa2ff1.cat",
+        "c/Catalogs/cat4ec14c5368b7642563c070cd168960a8.cat",
+        "c/Catalogs/cate59830bab4961666e8d8c2af1e5fa771.cat",
+        "c/Catalogs/catf105a73f98cfc88c7b64d8f7b39a474c.cat",
+        "microsoft.windows.sdk.contracts.10.0.19041.1.nupkg.sha512",
+        "microsoft.windows.sdk.contracts.nuspec",
+        "ref/netstandard2.0/Windows.AI.MachineLearning.MachineLearningContract.winmd",
+        "ref/netstandard2.0/Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivatedEventsContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivationCameraSettingsContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Activation.ContactActivatedEventsContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Calls.Background.CallsBackgroundContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsPhoneContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsVoipContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Calls.LockScreenCallContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.FullTrustAppContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Preview.InkWorkspace.PreviewInkWorkspaceContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Preview.Notes.PreviewNotesContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Resources.Management.ResourceIndexerContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Search.Core.SearchCoreContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Search.SearchContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.SocialInfo.SocialInfoContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.StartupTaskContract.winmd",
+        "ref/netstandard2.0/Windows.ApplicationModel.Wallet.WalletContract.winmd",
+        "ref/netstandard2.0/Windows.Devices.Custom.CustomDeviceContract.winmd",
+        "ref/netstandard2.0/Windows.Devices.DevicesLowLevelContract.winmd",
+        "ref/netstandard2.0/Windows.Devices.Portable.PortableDeviceContract.winmd",
+        "ref/netstandard2.0/Windows.Devices.Printers.Extensions.ExtensionsContract.winmd",
+        "ref/netstandard2.0/Windows.Devices.Printers.PrintersContract.winmd",
+        "ref/netstandard2.0/Windows.Devices.Scanners.ScannerDeviceContract.winmd",
+        "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardBackgroundTriggerContract.winmd",
+        "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardEmulatorContract.winmd",
+        "ref/netstandard2.0/Windows.Devices.Sms.LegacySmsApiContract.winmd",
+        "ref/netstandard2.0/Windows.Embedded.DeviceLockdown.DeviceLockdownContract.winmd",
+        "ref/netstandard2.0/Windows.Foundation.FoundationContract.winmd",
+        "ref/netstandard2.0/Windows.Foundation.UniversalApiContract.winmd",
+        "ref/netstandard2.0/Windows.Gaming.Input.GamingInputPreviewContract.winmd",
+        "ref/netstandard2.0/Windows.Gaming.Preview.GamesEnumerationContract.winmd",
+        "ref/netstandard2.0/Windows.Gaming.UI.GameChatOverlayContract.winmd",
+        "ref/netstandard2.0/Windows.Gaming.UI.GamingUIProviderContract.winmd",
+        "ref/netstandard2.0/Windows.Gaming.XboxLive.StorageApiContract.winmd",
+        "ref/netstandard2.0/Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract.winmd",
+        "ref/netstandard2.0/Windows.Graphics.Printing3D.Printing3DContract.winmd",
+        "ref/netstandard2.0/Windows.Management.Deployment.Preview.DeploymentPreviewContract.winmd",
+        "ref/netstandard2.0/Windows.Management.Workplace.WorkplaceSettingsContract.winmd",
+        "ref/netstandard2.0/Windows.Media.AppBroadcasting.AppBroadcastingContract.winmd",
+        "ref/netstandard2.0/Windows.Media.AppRecording.AppRecordingContract.winmd",
+        "ref/netstandard2.0/Windows.Media.Capture.AppBroadcastContract.winmd",
+        "ref/netstandard2.0/Windows.Media.Capture.AppCaptureContract.winmd",
+        "ref/netstandard2.0/Windows.Media.Capture.AppCaptureMetadataContract.winmd",
+        "ref/netstandard2.0/Windows.Media.Capture.CameraCaptureUIContract.winmd",
+        "ref/netstandard2.0/Windows.Media.Capture.GameBarContract.winmd",
+        "ref/netstandard2.0/Windows.Media.Devices.CallControlContract.winmd",
+        "ref/netstandard2.0/Windows.Media.MediaControlContract.winmd",
+        "ref/netstandard2.0/Windows.Media.Playlists.PlaylistsContract.winmd",
+        "ref/netstandard2.0/Windows.Media.Protection.ProtectionRenewalContract.winmd",
+        "ref/netstandard2.0/Windows.Networking.Connectivity.WwanContract.winmd",
+        "ref/netstandard2.0/Windows.Networking.NetworkOperators.LegacyNetworkOperatorsContract.winmd",
+        "ref/netstandard2.0/Windows.Networking.NetworkOperators.NetworkOperatorsFdnContract.WinMD",
+        "ref/netstandard2.0/Windows.Networking.Sockets.ControlChannelTriggerContract.winmd",
+        "ref/netstandard2.0/Windows.Networking.XboxLive.XboxLiveSecureSocketsContract.winmd",
+        "ref/netstandard2.0/Windows.Perception.Automation.Core.PerceptionAutomationCoreContract.winmd",
+        "ref/netstandard2.0/Windows.Phone.PhoneContract.winmd",
+        "ref/netstandard2.0/Windows.Phone.StartScreen.DualSimTileContract.WinMD",
+        "ref/netstandard2.0/Windows.Security.EnterpriseData.EnterpriseDataContract.winmd",
+        "ref/netstandard2.0/Windows.Security.ExchangeActiveSyncProvisioning.EasContract.winmd",
+        "ref/netstandard2.0/Windows.Security.Isolation.Isolatedwindowsenvironmentcontract.winmd",
+        "ref/netstandard2.0/Windows.Services.Maps.GuidanceContract.winmd",
+        "ref/netstandard2.0/Windows.Services.Maps.LocalSearchContract.winmd",
+        "ref/netstandard2.0/Windows.Services.Store.StoreContract.winmd",
+        "ref/netstandard2.0/Windows.Services.TargetedContent.TargetedContentContract.winmd",
+        "ref/netstandard2.0/Windows.Storage.Provider.CloudFilesContract.winmd",
+        "ref/netstandard2.0/Windows.System.Profile.ProfileHardwareTokenContract.winmd",
+        "ref/netstandard2.0/Windows.System.Profile.ProfileRetailInfoContract.winmd",
+        "ref/netstandard2.0/Windows.System.Profile.ProfileSharedModeContract.winmd",
+        "ref/netstandard2.0/Windows.System.Profile.SystemManufacturers.SystemManufacturersContract.winmd",
+        "ref/netstandard2.0/Windows.System.SystemManagementContract.winmd",
+        "ref/netstandard2.0/Windows.System.UserProfile.UserProfileContract.winmd",
+        "ref/netstandard2.0/Windows.System.UserProfile.UserProfileLockScreenContract.winmd",
+        "ref/netstandard2.0/Windows.UI.ApplicationSettings.ApplicationsSettingsContract.winmd",
+        "ref/netstandard2.0/Windows.UI.Core.AnimationMetrics.AnimationMetricsContract.winmd",
+        "ref/netstandard2.0/Windows.UI.Core.CoreWindowDialogsContract.winmd",
+        "ref/netstandard2.0/Windows.UI.Shell.SecurityAppManagerContract.winmd",
+        "ref/netstandard2.0/Windows.UI.ViewManagement.ViewManagementViewScalingContract.winmd",
+        "ref/netstandard2.0/Windows.UI.WebUI.Core.WebUICommandBarContract.winmd",
+        "ref/netstandard2.0/Windows.UI.Xaml.Core.Direct.XamlDirectContract.winmd",
+        "ref/netstandard2.0/Windows.UI.Xaml.Hosting.HostingContract.winmd",
+        "ref/netstandard2.0/Windows.Web.Http.Diagnostics.HttpDiagnosticsContract.winmd",
+        "ref/netstandard2.0/Windows.WinMD",
+        "ref/netstandard2.0/en/Windows.AI.MachineLearning.MachineLearningContract.xml",
+        "ref/netstandard2.0/en/Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Activation.ActivatedEventsContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Activation.ActivationCameraSettingsContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Activation.ContactActivatedEventsContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Calls.Background.CallsBackgroundContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Calls.CallsPhoneContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Calls.CallsVoipContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Calls.LockScreenCallContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.FullTrustAppContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Preview.InkWorkspace.PreviewInkWorkspaceContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Preview.Notes.PreviewNotesContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Resources.Management.ResourceIndexerContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Search.Core.SearchCoreContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Search.SearchContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.SocialInfo.SocialInfoContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.StartupTaskContract.xml",
+        "ref/netstandard2.0/en/Windows.ApplicationModel.Wallet.WalletContract.xml",
+        "ref/netstandard2.0/en/Windows.Devices.Custom.CustomDeviceContract.xml",
+        "ref/netstandard2.0/en/Windows.Devices.DevicesLowLevelContract.xml",
+        "ref/netstandard2.0/en/Windows.Devices.Portable.PortableDeviceContract.xml",
+        "ref/netstandard2.0/en/Windows.Devices.Printers.Extensions.ExtensionsContract.xml",
+        "ref/netstandard2.0/en/Windows.Devices.Printers.PrintersContract.xml",
+        "ref/netstandard2.0/en/Windows.Devices.Scanners.ScannerDeviceContract.xml",
+        "ref/netstandard2.0/en/Windows.Devices.SmartCards.SmartCardBackgroundTriggerContract.xml",
+        "ref/netstandard2.0/en/Windows.Devices.SmartCards.SmartCardEmulatorContract.xml",
+        "ref/netstandard2.0/en/Windows.Devices.Sms.LegacySmsApiContract.xml",
+        "ref/netstandard2.0/en/Windows.Foundation.FoundationContract.xml",
+        "ref/netstandard2.0/en/Windows.Foundation.UniversalApiContract.xml",
+        "ref/netstandard2.0/en/Windows.Gaming.Input.GamingInputPreviewContract.xml",
+        "ref/netstandard2.0/en/Windows.Gaming.Preview.GamesEnumerationContract.xml",
+        "ref/netstandard2.0/en/Windows.Gaming.UI.GameChatOverlayContract.xml",
+        "ref/netstandard2.0/en/Windows.Gaming.UI.GamingUIProviderContract.xml",
+        "ref/netstandard2.0/en/Windows.Gaming.XboxLive.StorageApiContract.xml",
+        "ref/netstandard2.0/en/Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract.xml",
+        "ref/netstandard2.0/en/Windows.Graphics.Printing3D.Printing3DContract.xml",
+        "ref/netstandard2.0/en/Windows.Management.Deployment.Preview.DeploymentPreviewContract.xml",
+        "ref/netstandard2.0/en/Windows.Management.Workplace.WorkplaceSettingsContract.xml",
+        "ref/netstandard2.0/en/Windows.Media.AppBroadcasting.AppBroadcastingContract.xml",
+        "ref/netstandard2.0/en/Windows.Media.AppRecording.AppRecordingContract.xml",
+        "ref/netstandard2.0/en/Windows.Media.Capture.AppBroadcastContract.xml",
+        "ref/netstandard2.0/en/Windows.Media.Capture.AppCaptureContract.xml",
+        "ref/netstandard2.0/en/Windows.Media.Capture.AppCaptureMetadataContract.xml",
+        "ref/netstandard2.0/en/Windows.Media.Capture.CameraCaptureUIContract.xml",
+        "ref/netstandard2.0/en/Windows.Media.Capture.GameBarContract.xml",
+        "ref/netstandard2.0/en/Windows.Media.Devices.CallControlContract.xml",
+        "ref/netstandard2.0/en/Windows.Media.MediaControlContract.xml",
+        "ref/netstandard2.0/en/Windows.Media.Playlists.PlaylistsContract.xml",
+        "ref/netstandard2.0/en/Windows.Media.Protection.ProtectionRenewalContract.xml",
+        "ref/netstandard2.0/en/Windows.Networking.Connectivity.WwanContract.xml",
+        "ref/netstandard2.0/en/Windows.Networking.NetworkOperators.LegacyNetworkOperatorsContract.xml",
+        "ref/netstandard2.0/en/Windows.Networking.NetworkOperators.NetworkOperatorsFdnContract.xml",
+        "ref/netstandard2.0/en/Windows.Networking.Sockets.ControlChannelTriggerContract.xml",
+        "ref/netstandard2.0/en/Windows.Networking.XboxLive.XboxLiveSecureSocketsContract.xml",
+        "ref/netstandard2.0/en/Windows.Perception.Automation.Core.PerceptionAutomationCoreContract.xml",
+        "ref/netstandard2.0/en/Windows.Phone.PhoneContract.xml",
+        "ref/netstandard2.0/en/Windows.Phone.StartScreen.DualSimTileContract.xml",
+        "ref/netstandard2.0/en/Windows.Security.EnterpriseData.EnterpriseDataContract.xml",
+        "ref/netstandard2.0/en/Windows.Security.ExchangeActiveSyncProvisioning.EasContract.xml",
+        "ref/netstandard2.0/en/Windows.Services.Maps.GuidanceContract.xml",
+        "ref/netstandard2.0/en/Windows.Services.Maps.LocalSearchContract.xml",
+        "ref/netstandard2.0/en/Windows.Services.Store.StoreContract.xml",
+        "ref/netstandard2.0/en/Windows.Services.TargetedContent.TargetedContentContract.xml",
+        "ref/netstandard2.0/en/Windows.Storage.Provider.CloudFilesContract.xml",
+        "ref/netstandard2.0/en/Windows.System.Profile.ProfileHardwareTokenContract.xml",
+        "ref/netstandard2.0/en/Windows.System.Profile.ProfileRetailInfoContract.xml",
+        "ref/netstandard2.0/en/Windows.System.Profile.ProfileSharedModeContract.xml",
+        "ref/netstandard2.0/en/Windows.System.Profile.SystemManufacturers.SystemManufacturersContract.xml",
+        "ref/netstandard2.0/en/Windows.System.SystemManagementContract.xml",
+        "ref/netstandard2.0/en/Windows.System.UserProfile.UserProfileContract.xml",
+        "ref/netstandard2.0/en/Windows.System.UserProfile.UserProfileLockScreenContract.xml",
+        "ref/netstandard2.0/en/Windows.UI.ApplicationSettings.ApplicationsSettingsContract.xml",
+        "ref/netstandard2.0/en/Windows.UI.Core.AnimationMetrics.AnimationMetricsContract.xml",
+        "ref/netstandard2.0/en/Windows.UI.Core.CoreWindowDialogsContract.xml",
+        "ref/netstandard2.0/en/Windows.UI.Shell.SecurityAppManagerContract.xml",
+        "ref/netstandard2.0/en/Windows.UI.ViewManagement.ViewManagementViewScalingContract.xml",
+        "ref/netstandard2.0/en/Windows.UI.WebUI.Core.WebUICommandBarContract.xml",
+        "ref/netstandard2.0/en/Windows.UI.Xaml.Core.Direct.XamlDirectContract.xml",
+        "ref/netstandard2.0/en/Windows.UI.Xaml.Hosting.HostingContract.xml",
+        "ref/netstandard2.0/en/Windows.Web.Http.Diagnostics.HttpDiagnosticsContract.xml"
+      ]
+    },
+    "System.Runtime.WindowsRuntime/4.6.0": {
+      "sha512": "IWrs1TmbxP65ZZjIglNyvDkFNoV5q2Pofg5WO7I8RKQOpLdFprQSh3xesOoClBqR4JHr4nEB1Xk1MqLPW1jPuQ==",
+      "type": "package",
+      "path": "system.runtime.windowsruntime/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/net45/System.Runtime.WindowsRuntime.targets",
+        "build/net451/System.Runtime.WindowsRuntime.targets",
+        "build/net461/System.Runtime.WindowsRuntime.targets",
+        "buildTransitive/net45/System.Runtime.WindowsRuntime.targets",
+        "buildTransitive/net451/System.Runtime.WindowsRuntime.targets",
+        "buildTransitive/net461/System.Runtime.WindowsRuntime.targets",
+        "lib/net45/_._",
+        "lib/netstandard1.0/System.Runtime.WindowsRuntime.dll",
+        "lib/netstandard1.0/System.Runtime.WindowsRuntime.xml",
+        "lib/netstandard1.2/System.Runtime.WindowsRuntime.dll",
+        "lib/netstandard1.2/System.Runtime.WindowsRuntime.xml",
+        "lib/netstandard2.0/System.Runtime.WindowsRuntime.dll",
+        "lib/netstandard2.0/System.Runtime.WindowsRuntime.xml",
+        "lib/portable-win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Runtime.WindowsRuntime.dll",
+        "ref/netcore50/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/de/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/es/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/fr/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/it/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/ja/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/ko/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/ru/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/zh-hans/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/zh-hant/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/System.Runtime.WindowsRuntime.dll",
+        "ref/netstandard1.0/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/de/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/es/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/fr/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/it/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/ja/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/ko/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/ru/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/zh-hans/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/zh-hant/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/System.Runtime.WindowsRuntime.dll",
+        "ref/netstandard1.2/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/de/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/es/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/fr/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/it/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/ja/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/ko/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/ru/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/zh-hans/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/zh-hant/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard2.0/System.Runtime.WindowsRuntime.dll",
+        "ref/netstandard2.0/System.Runtime.WindowsRuntime.xml",
+        "ref/portable-win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "runtimes/win-aot/lib/netcore50/System.Runtime.WindowsRuntime.dll",
+        "runtimes/win-aot/lib/uap10.0.16299/_._",
+        "runtimes/win/lib/netcore50/System.Runtime.WindowsRuntime.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Runtime.WindowsRuntime.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Runtime.WindowsRuntime.xml",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.runtime.windowsruntime.4.6.0.nupkg.sha512",
+        "system.runtime.windowsruntime.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.WindowsRuntime.UI.Xaml/4.6.0": {
+      "sha512": "r4tNw5v5kqRJ9HikWpcyNf3suGw7DjX93svj9iBjtdeLqL8jt9Z+7f+s4wrKZJr84u8IMsrIjt8K6jYvkRqMSg==",
+      "type": "package",
+      "path": "system.runtime.windowsruntime.ui.xaml/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/net45/System.Runtime.WindowsRuntime.UI.Xaml.targets",
+        "build/net461/System.Runtime.WindowsRuntime.UI.Xaml.targets",
+        "lib/net45/_._",
+        "lib/netstandard1.1/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "lib/netstandard1.1/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "lib/netstandard2.0/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "lib/netstandard2.0/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "lib/portable-win8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wpa81/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "ref/netcore50/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/de/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/es/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/fr/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/it/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/ja/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/ko/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/ru/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/zh-hans/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/zh-hant/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "ref/netstandard1.1/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/de/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/es/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/fr/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/it/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/ja/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/ko/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/ru/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/zh-hans/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/zh-hant/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard2.0/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "ref/netstandard2.0/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/portable-win8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wpa81/_._",
+        "runtimes/win-aot/lib/uap10.0.16299/_._",
+        "runtimes/win/lib/netcore50/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.runtime.windowsruntime.ui.xaml.4.6.0.nupkg.sha512",
+        "system.runtime.windowsruntime.ui.xaml.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "CefSharp.WinForms >= 132.3.11",
+      "Microsoft.Toolkit.Uwp.Notifications >= 7.1.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\guiar\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\guiar\\source\\repos\\QwenAgent\\QwenClient\\QwenClient.csproj",
+      "projectName": "QwenClient",
+      "projectPath": "C:\\Users\\guiar\\source\\repos\\QwenAgent\\QwenClient\\QwenClient.csproj",
+      "packagesPath": "C:\\Users\\guiar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\guiar\\source\\repos\\QwenAgent\\QwenClient\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "UsingMicrosoftNETSdk": false,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\guiar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {}
+        }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "CefSharp.WinForms": {
+            "target": "Package",
+            "version": "[132.3.11, )"
+          },
+          "Microsoft.Toolkit.Uwp.Notifications": {
+            "target": "Package",
+            "version": "[7.1.3, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

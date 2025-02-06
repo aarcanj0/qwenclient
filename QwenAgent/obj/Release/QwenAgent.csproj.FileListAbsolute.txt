@@ -1,0 +1,7 @@
+C:\Users\guiar\source\repos\QwenAgent\QwenAgent\bin\Release\QwenAgent.exe.config
+C:\Users\guiar\source\repos\QwenAgent\QwenAgent\bin\Release\QwenAgent.exe
+C:\Users\guiar\source\repos\QwenAgent\QwenAgent\bin\Release\QwenAgent.pdb
+C:\Users\guiar\source\repos\QwenAgent\QwenAgent\obj\Release\QwenAgent.csproj.AssemblyReference.cache
+C:\Users\guiar\source\repos\QwenAgent\QwenAgent\obj\Release\QwenAgent.csproj.CoreCompileInputs.cache
+C:\Users\guiar\source\repos\QwenAgent\QwenAgent\obj\Release\QwenAgent.exe
+C:\Users\guiar\source\repos\QwenAgent\QwenAgent\obj\Release\QwenAgent.pdb
