@@ -44,14 +44,14 @@ Para iniciar o QwenAgent com o Windows e deixar o QwenClient de prontidão para 
 
 Para fazer isso basta executar `shell:startup` no Explorer 
 
-![](.\img\05.png)
+<img src=".\img\05.png" />
 
 Crie um atalho dentro da pasta Inicializar
 
-![06](.\img\06.png)
+<img src=".\img\06.png" />
 
 E insira o caminho onde você deixou o executável do QwenAgent
 
-![07](.\img\07.png)
+<img src=".\img\07.png" />
 
 E pronto
