@@ -37,3 +37,21 @@ Pra fazer isso simplesmente mude os valores dessas duas variáveis:
 
 
 Você deve colocar o valor em hexadecimal respectivo das teclas que quer adicionar. Para isso consulte a tabela de [Virtual Key Code](https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes) do Windows e substitua a vontade. 
+
+### QwenAgent iniciando com junto com o Windows
+
+Para iniciar o QwenAgent com o Windows e deixar o QwenClient de prontidão para o uso basta adicionar um atalho do QwenAgent na pasta de inicialização do Windows
+
+Para fazer isso basta executar `shell:startup` no Explorer 
+
+![](.\img\05.png)
+
+Crie um atalho dentro da pasta Inicializar
+
+![06](.\img\06.png)
+
+E insira o caminho onde você deixou o executável do QwenAgent
+
+![07](.\img\07.png)
+
+E pronto
