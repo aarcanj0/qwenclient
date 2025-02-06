@@ -38,6 +38,9 @@ Pra fazer isso simplesmente mude os valores dessas duas variáveis:
 
 Você deve colocar o valor em hexadecimal respectivo das teclas que quer adicionar. Para isso consulte a tabela de [Virtual Key Code](https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes) do Windows e substitua a vontade. 
 
+
+
+
 ### QwenAgent iniciando com junto com o Windows
 
 Para iniciar o QwenAgent com o Windows e deixar o QwenClient de prontidão para o uso basta adicionar um atalho do QwenAgent na pasta de inicialização do Windows
