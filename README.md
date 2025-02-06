@@ -4,7 +4,7 @@
 
 Fiz dois programas para trabalharem juntos, sendo eles o QwenAgent e o QwenClient.
 
-![](.\img\01.png)
+<img src=".\img\01.png" />
 
 O QwenClient é responsável por acessar o site e mostrar a interface no centro da tela de forma prática, enquanto o QwenAgent é responsável por chamar o QwenClient com o comando `Alt + C` do teclado.
 
@@ -14,7 +14,7 @@ O QwenClient é responsável por acessar o site e mostrar a interface no centro 
 
 Após executar o QwenAgent ele irá esperar constantemente em background pelo comando do teclado responsável por chamar o QwenClient. Utilizando uma biblioteca da API do Windows `user32.dll`
 
-![](.\img\02.png)
+<img src=".\img\02.png" />
 
 **QwenAgent usa poucos recursos do computador e é quase irrelevante, porém é completamente opcional. Você pode abrir o QwenClient manualmente sem problemas.**
 
@@ -32,7 +32,7 @@ Infelizmente ainda não implementei isso como recurso no QwenClient ainda, entã
 
 Pra fazer isso simplesmente mude os valores dessas duas variáveis:
 
- ![](.\img\04.png)
+<img src=".\img\04.png" />
 
 
 
